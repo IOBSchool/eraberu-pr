@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>えらべるPR｜内容も、ご予算も。ブランドに合う形から。｜レムケなつこ</title>
+<meta name="description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。ご希望の形を選ぶと、今回の参考価格が表示されます。">
+<meta property="og:title" content="えらべるPR｜内容も、ご予算も。ブランドに合う形から。">
+<meta property="og:description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme:light;
+    --point:#f26b3b;
+    --ink:#553727;
+    --bg:#f9f7ef;
+    --second:#0085c9;
+    --sub:#85634b;
+    --line:#e6ddc9;
+    --white:#fffdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  h1,h2,h3,.mincho{font-family:"Zen Old Mincho",serif;}
+  a{color:var(--point);}
+  p{margin-bottom:14px;}
+  p:last-child{margin-bottom:0;}
+
+  /* ===== 冒頭 ===== */
+  .head{padding:44px 0 34px;border-bottom:1px solid var(--line);}
+  .head .logo{display:block;width:120px;margin-bottom:26px;}
+  .head h1{font-size:40px;font-weight:900;color:var(--point);letter-spacing:.04em;line-height:1.3;}
+  .head .tag{font-family:"Zen Old Mincho",serif;font-size:19px;font-weight:700;margin:8px 0 22px;line-height:1.6;}
+  .head .who{font-size:14px;color:var(--sub);line-height:1.7;}
+  .head .who b{font-family:"Zen Old Mincho",serif;font-size:17px;color:var(--ink);}
+  .intro{padding:34px 0 10px;}
+  .note-box{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;margin-top:18px;}
+
+  /* ===== 設問 ===== */
+  .q{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px 18px;margin:22px 0;}
+  .q h2{font-size:18.5px;font-weight:700;line-height:1.6;margin-bottom:14px;}
+  .q h2 .num{color:var(--point);margin-right:4px;}
+  .q h2 small{font-family:"Noto Sans JP",sans-serif;font-size:13px;font-weight:500;color:var(--sub);}
+  .opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin-bottom:8px;cursor:pointer;background:#fff;line-height:1.6;}
+  .opt input{margin-top:4px;flex:none;width:18px;height:18px;accent-color:var(--point);}
+  .opt .d{display:block;font-size:13px;color:var(--sub);}
+  .opt:has(input:checked){border-color:var(--point);background:#fff6f1;}
+  .cond{display:none;font-size:14px;line-height:1.85;background:#f4efe2;border-radius:10px;padding:12px 14px;margin-top:12px;}
+  .cond.on{display:block;}
+  .cond p{margin-bottom:8px;}
+  .fine{font-size:13px;color:var(--sub);line-height:1.8;margin-top:12px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 8px;}
+  @media(max-width:420px){.grid2{grid-template-columns:1fr;}}
+
+  /* ===== 参考価格 ===== */
+  .price{background:#fff;border:2px solid var(--point);border-radius:16px;padding:22px 18px;margin:30px 0 22px;}
+  .price h2{font-size:21px;font-weight:700;margin-bottom:12px;}
+  .price .lead{font-size:14px;line-height:1.85;}
+  .price .out{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:14.5px;}
+  .price .yen{font-family:"Zen Old Mincho",serif;font-size:27px;font-weight:900;color:var(--point);line-height:1.5;display:block;margin:2px 0 8px;}
+
+  /* ===== 金額 ===== */
+  .amount-row{display:flex;align-items:center;gap:8px;margin:14px 0;}
+  .amount-row input{flex:1;font-size:22px;text-align:right;font-family:"Zen Old Mincho",serif;font-weight:700;}
+  .amount-row span{font-size:18px;font-weight:700;}
+  .amount ul{margin:8px 0 12px 1.2em;font-size:15px;}
+
+  /* ===== 入力 ===== */
+  .sec-title{font-size:19px;font-weight:700;line-height:1.6;margin:34px 0 14px;padding-left:12px;border-left:5px solid var(--point);}
+  .field{margin-bottom:16px;}
+  .field label.l{display:block;font-weight:700;font-size:15px;margin-bottom:6px;}
+  .req{display:inline-block;font-size:11.5px;color:#fff;background:var(--point);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:2px;font-weight:500;}
+  .opt-tag{display:inline-block;font-size:11.5px;color:var(--sub);border:1px solid var(--line);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:2px;font-weight:500;}
+  input[type=text],input[type=email],input[type=url],input[type=number],textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink);}
+  input:focus,textarea:focus{outline:none;border-color:var(--point);}
+  textarea{min-height:110px;line-height:1.7;}
+  .radio-inline{display:flex;flex-wrap:wrap;gap:8px;}
+  .radio-inline .opt{margin:0;flex:1 1 auto;}
+  .check{display:flex;gap:10px;align-items:flex-start;margin:6px 0;font-weight:700;cursor:pointer;line-height:1.6;}
+  .check input{margin-top:4px;flex:none;width:18px;height:18px;accent-color:var(--point);}
+  .block{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;font-size:14.5px;}
+  .block p{margin-bottom:8px;}
+  .care{font-size:14.5px;}
+
+  /* ===== 送信 ===== */
+  .closing{padding:30px 0 6px;}
+  .submit{display:block;width:100%;max-width:440px;margin:24px auto 0;background:var(--point);color:#fff;border:none;cursor:pointer;text-align:center;padding:16px;border-radius:12px;font-weight:700;font-family:"Zen Old Mincho",serif;font-size:17.5px;}
+  .submit:disabled{opacity:.6;cursor:default;}
+  .err{display:none;color:#c0392b;font-size:14px;text-align:center;margin-top:12px;}
+  .err.on{display:block;}
+
+  /* 第二の入口（主ボタンより目立たせない） */
+  .later{max-width:440px;margin:34px auto 0;font-size:13px;color:var(--sub);line-height:1.8;}
+  .later summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px;list-style:none;}
+  .later summary::-webkit-details-marker{display:none;}
+  .later .inner{margin-top:10px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--white);}
+  .later .field label.l{font-size:13.5px;}
+  .later input[type=text],.later input[type=email]{padding:9px 12px;font-size:15px;}
+  .later button{display:block;width:100%;margin-top:10px;background:#fff;color:var(--ink);border:1px solid var(--sub);border-radius:10px;padding:10px;font-size:14px;font-family:inherit;cursor:pointer;}
+
+  /* ===== 送信後 ===== */
+  .done{display:none;padding:40px 0 20px;}
+  .done .mincho{font-size:22px;color:var(--point);margin-bottom:16px;line-height:1.6;}
+  .done p{font-size:15px;}
+  #timerexBox{display:none;margin:26px 0;padding:18px;background:var(--white);border:1px solid var(--line);border-radius:14px;}
+  #timerexBox h3{font-size:18px;margin-bottom:8px;}
+  #timerex_calendar{margin-top:12px;min-height:120px;}
+  .fallback-btn{display:block;background:var(--point);color:#fff;text-decoration:none;padding:15px;border-radius:12px;font-size:16px;font-weight:700;font-family:"Zen Old Mincho",serif;margin:20px auto;max-width:320px;text-align:center;}
+
+  /* 公開前の確認用（下書きの間だけ黄色で見える・公開時は IOB_PHASE で消す） */
+  .tbd{background:#fff3a8;color:#7a5b00;font-size:12px;font-weight:700;border-radius:4px;padding:0 5px;margin-left:4px;}
+  body.live .tbd{display:none;}
+
+  footer{text-align:center;font-size:12.5px;color:var(--sub);padding:40px 20px 50px;line-height:1.9;border-top:1px solid var(--line);margin-top:40px;}
+  footer a{color:var(--sub);}
+  .hp{position:absolute;left:-9999px;}
+</style>
+</head>
+<body>
+<script>
+  // 公開状態："draft"＝下書き（【要確認】が黄色で見える）／"live"＝公開（【要確認】を隠す）
+  window.IOB_PHASE = "draft";
+  if (window.IOB_PHASE === "live") document.body.classList.add("live");
+</script>
+
+<div class="wrap">
+
+  <header class="head">
+    <img class="logo" src="iob-logo-orange.png" alt="Institut für Organic Business">
+    <h1>えらべるPR</h1>
+    <div class="tag">内容も、ご予算も。<br>ブランドに合う形から。</div>
+    <div class="who"><b>レムケなつこ</b><br>ドイツ在住オーガニック教育の専門家</div>
+  </header>
+
+  <div id="pageMain">
+
+  <section class="intro">
+    <p>Just an ideaなのですが、ひとつご提案です。</p>
+    <p>2026年11月、オーストリアのビオホテル2軒に滞在します。</p>
+    <p>せっかくなので、この場所と相性のよさそうな日本の商品をいくつか持っていき、現地で撮影してご紹介できたら面白いかなと思っています。</p>
+    <p>とはいえ、11月のタイミングが合わなかったり、商品が間に合わなかったり、「ビオホテルではなく別の場所のほうが合いそう」ということもあると思います。</p>
+    <p>その場合も大丈夫です。</p>
+    <p>このページでは、どんな形でご紹介するのがよさそうか、ご希望をいくつか選んでいただけるようにしました。</p>
+    <p>もし何か相性がよさそうでしたら、というくらいの気持ちで受け取っていただけたら嬉しいです。</p>
+    <div class="note-box">※このページを送信した時点では、ご契約・ご請求は確定しません。</div>
+  </section>
+
+  <form id="applyForm" novalidate>
+
+    <!-- Q1 -->
+    <div class="q" id="q1box">
+      <h2><span class="num">1.</span>いつ・どこで撮影するのがよさそうですか？</h2>
+      <label class="opt"><input type="radio" name="q1" value="hotel" required><span>2026年11月のオーストリア・ビオホテル滞在中に撮影したい</span></label>
+      <label class="opt"><input type="radio" name="q1" value="other"><span>ビオホテル以外の時期・場所で相談したい</span></label>
+      <label class="opt"><input type="radio" name="q1" value="undecided"><span>まだ決めていないので相談したい</span></label>
+      <div class="cond" data-show="q1=hotel">
+        <p>ビオホテルでの滞在日数と撮影できる時間には限りがあります。</p>
+        <p>今回のビオホテル撮影は、3〜4社程度まで、リール制作は2本までを予定しています。</p>
+        <p>ご希望いただいた内容と、現地で確保できる撮影時間を確認しながら、実施内容を調整します。</p>
+        <p>ご希望が重なった場合には、撮影内容や実施時期をご相談させていただく場合があります。</p>
+        <p>11月のビオホテル撮影が難しい場合も、別の時期・場所での撮影をご相談いただけます。</p>
+      </div>
+      <div class="cond" data-show="q1=other">
+        <p>別の時期・場所での撮影もご相談いただけます。</p>
+        <p>移動・撮影場所・必要な手配などによって追加費用が発生する場合には、実施前に内容と金額をご相談します。</p>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q" id="q2box">
+      <h2><span class="num">2.</span>どんな形でご紹介するのがよさそうですか？</h2>
+      <label class="opt"><input type="radio" name="q2" value="stories" required><span>ストーリーズ中心<span class="d">短く自然に商品をご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="feed"><span>フィード投稿＋ストーリーズ<span class="d">写真と文章として残る形でご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="reel"><span>リール＋ストーリーズ<span class="d">動画を中心に商品の魅力をご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="all"><span>リール＋フィード＋ストーリーズ<span class="d">複数の形でご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="undecided"><span>まだ決めていない／提案してほしい</span></label>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q" id="q3box">
+      <h2><span class="num">3.</span>レムケなつこが、どのくらい関わる形がよさそうですか？</h2>
+      <label class="opt"><input type="radio" name="q3" value="visual" required><span>商品・風景・文字を中心に見せたい</span></label>
+      <label class="opt"><input type="radio" name="q3" value="voice"><span>声や短いコメントを入れたい</span></label>
+      <label class="opt"><input type="radio" name="q3" value="appear"><span>本人が出演して商品をご紹介したい</span></label>
+      <label class="opt"><input type="radio" name="q3" value="expert"><span>専門家として商品の背景や特徴についても解説してほしい</span></label>
+      <label class="opt"><input type="radio" name="q3" value="propose"><span>内容に合う方法を提案してほしい</span></label>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q" id="q4box">
+      <h2><span class="num">4.</span>どんな撮影イメージが商品に合いそうですか？<small>（複数選択できます）</small></h2>
+      <div class="grid2">
+        <label class="opt"><input type="checkbox" name="q4" value="ホテル室内・インテリア"><span>ホテル室内・インテリア</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="自然・緑"><span>自然・緑</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="水辺・透明感"><span>水辺・透明感</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="木・温かさ"><span>木・温かさ</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="屋外・ハイキング"><span>屋外・ハイキング</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="静か・落ち着いた雰囲気"><span>静か・落ち着いた雰囲気</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="クール・洗練"><span>クール・洗練</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="その他"><span>その他</span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="おまかせしたい"><span>おまかせしたい</span></label>
+      </div>
+      <p class="fine">実際に撮影できる場所やシーンは、現地の環境・天候・ホテル側の許可・当日の撮影状況によって変わります。<br>こちらはブランドのご希望を知るための設問で、特定の場所での撮影をお約束するものではありません。</p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q" id="q5box">
+      <h2><span class="num">5.</span>撮影する商品は現在どの状態ですか？</h2>
+      <label class="opt"><input type="radio" name="q5" value="hand" required><span>すでにレムケなつこの手元にある</span></label>
+      <label class="opt"><input type="radio" name="q5" value="eu"><span>ドイツ国内／EU圏内から送付予定</span></label>
+      <label class="opt"><input type="radio" name="q5" value="intl"><span>日本などEU圏外から国際発送予定</span></label>
+      <label class="opt"><input type="radio" name="q5" value="none"><span>商品の発送は不要</span></label>
+      <label class="opt"><input type="radio" name="q5" value="unknown"><span>まだ分からない</span></label>
+
+      <div class="cond" data-show="q1=hotel&amp;q5=hand">
+        <p>商品はすでに手元にありますので、発送のお手続きは不要です。</p>
+        <p>撮影内容を出発前に確定する必要があるため、10月23日（金）頃までを11月撮影のご相談目安としています。</p>
+        <p>それ以降でも内容によってはご相談できますが、撮影時期を変更してご提案する場合があります。</p>
+      </div>
+      <div class="cond" data-show="q1=hotel&amp;q5=eu">
+        <p>撮影は11月4日〜7日、出発は11月3日頃を予定しています。</p>
+        <p>商品は出発前にドイツで受け取れる必要があります。</p>
+        <p>・ドイツ到着：10月30日までを希望<span class="tbd">要確認</span></p>
+        <p>商品カテゴリーや配送状況によって異なるため、余裕をもった発送をお願いします。</p>
+      </div>
+      <div class="cond" data-show="q1=hotel&amp;q5=intl|unknown">
+        <p>撮影は11月4日〜7日、出発は11月3日頃を予定しています。</p>
+        <p>商品は出発前にドイツで受け取れる必要があります。</p>
+        <p class="tbd-line"><span class="tbd">要確認：国際配送・通関の日数を確認のうえ、正式な発送期限を掲載します。（公開時はこの行を外し、下の日付を確定版にする）</span></p>
+        <p>現時点の目安：<br>
+          ・ご相談：10月18日頃まで推奨<br>
+          ・日本からの発送：10月20日頃まで推奨<span class="tbd">要確認</span><br>
+          ・ドイツ到着：10月30日までを希望<span class="tbd">要確認</span></p>
+        <p>商品カテゴリーや配送状況によって異なるため、余裕をもった発送をお願いします。</p>
+      </div>
+      <div class="cond" data-show="q1=other|undecided&amp;q5=eu|intl|unknown">
+        <p>11月のビオホテル撮影用の発送期限は適用されません。</p>
+        <p>実施時期・場所が決まりましたら、商品をいつまでにお送りいただく必要があるか個別にご案内します。</p>
+      </div>
+    </div>
+
+    <!-- 参考価格 -->
+    <div class="price" id="priceBox">
+      <h2>今回の参考価格</h2>
+      <div class="lead">
+        <p>選んでいただいた内容をもとに、今回の参考価格を表示しています。<br>「この金額でお願いしてください」という意味ではありません。<br>どのくらいの仕事量になるのか、お互いにイメージしやすくするための目安として見てください。</p>
+      </div>
+      <div class="out" id="priceOut" aria-live="polite"></div>
+    </div>
+
+    <!-- 金額（B版） -->
+    <div class="q amount">
+      <h2>今回の金額</h2>
+      <p>参考価格を見たうえで、<br>「今回はこの金額でお願いしてみたい」<br>と思う金額を、1円以上で自由にご入力ください。</p>
+      <div class="amount-row">
+        <input type="number" name="amount" id="amount" min="1" step="1" inputmode="numeric" required placeholder="例）80000">
+        <span>円</span>
+      </div>
+      <p>参考価格と同じでなくて大丈夫です。</p>
+      <p>ただし、入力いただいた金額で、選択された内容をそのまま実施することをお約束するものではありません。</p>
+      <p>金額とご希望内容の両方を拝見して、</p>
+      <ul>
+        <li>この内容で実施する</li>
+        <li>内容を少し小さくして実施する</li>
+        <li>別の形をご提案する</li>
+      </ul>
+      <p>などを考えさせてください。</p>
+      <p>もし「今回はこの金額でもぜひご一緒したい」と私が思った場合には、そのままお受けすることもあります。</p>
+    </div>
+
+    <!-- 御社について -->
+    <h2 class="sec-title">御社について</h2>
+    <div class="field"><label class="l" for="company">会社名<span class="req">必須</span></label><input type="text" id="company" name="company" required autocomplete="organization"></div>
+    <div class="field"><label class="l" for="person">ご担当者名<span class="req">必須</span></label><input type="text" id="person" name="person" required autocomplete="name"></div>
+    <div class="field"><label class="l" for="email">メールアドレス<span class="req">必須</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
+    <div class="field">
+      <label class="l">御社の所在地<span class="req">必須</span></label>
+      <div class="radio-inline">
+        <label class="opt"><input type="radio" name="location" value="日本" required><span>日本</span></label>
+        <label class="opt"><input type="radio" name="location" value="EU圏内"><span>EU圏内</span></label>
+        <label class="opt"><input type="radio" name="location" value="その他"><span>その他</span></label>
+      </div>
+      <p class="fine">※請求時の税の取り扱いを確認するために使用します。</p>
+    </div>
+
+    <!-- 商品 -->
+    <h2 class="sec-title">ご紹介を希望する商品</h2>
+    <div class="field"><label class="l" for="product">商品名<span class="req">必須</span></label><input type="text" id="product" name="product" required></div>
+    <div class="field"><label class="l" for="productUrl">商品URL<span class="opt-tag">任意</span></label><input type="url" id="productUrl" name="productUrl" placeholder="https://"></div>
+    <div class="field">
+      <label class="l" for="note">レムケなつこに事前に伝えておきたいことがあれば教えてください。<span class="opt-tag">任意</span></label>
+      <textarea id="note" name="note"></textarea>
+      <p class="fine">※自社SNS・Webサイト等で撮影素材を利用したいご希望がある場合も、こちらにお書きください。利用条件は内容確定前にご相談します。<span class="tbd">要確認</span></p>
+    </div>
+
+    <!-- オンライン相談 -->
+    <h2 class="sec-title">オンラインでの相談</h2>
+    <div class="block">
+      <label class="check"><input type="checkbox" name="consult" id="consult"><span>実施前に一度オンラインで相談したい</span></label>
+      <p class="fine" style="margin-top:6px;">チェックされた場合は、送信後の画面から日程を選んでいただけます。<br>チェックされなくても問題ありません。</p>
+    </div>
+
+    <!-- 請求書・領収書 -->
+    <h2 class="sec-title">請求書・領収書</h2>
+    <div class="block">
+      <label class="check"><input type="checkbox" name="invoice" id="invoice"><span>正式決定後、請求書をメールで受け取りたい</span></label>
+      <div class="field" id="invoiceNameWrap" style="display:none;margin:10px 0 4px;">
+        <label class="l" for="invoiceName">請求書の宛名<span class="req">必須</span></label>
+        <input type="text" id="invoiceName" name="invoiceName">
+      </div>
+      <p class="fine" style="margin-top:6px;">このページを送信した時点では請求書は発行されません。<br>実施内容と金額を双方で確認し、正式に確定したあと、こちらで確定処理をすると請求書が自動でメール送付されます。</p>
+      <label class="check" style="margin-top:10px;"><input type="checkbox" name="receipt" id="receipt"><span>ご入金確認後、領収書の発行を希望する</span></label>
+      <p class="fine"><span class="tbd">要確認：請求通貨・税・VAT・請求書仕様</span></p>
+    </div>
+
+    <!-- 大切にしていること -->
+    <h2 class="sec-title">ご紹介について大切にしていること</h2>
+    <div class="care">
+      <p>有償でのご紹介となるため、実際の投稿ではPRであることが分かる形で表示します。<span class="tbd">要確認：具体的な表示方法</span></p>
+      <p>また、商品の特徴は確認できる情報の範囲でお伝えし、効き目・効果などを断定する表現は行いません。<span class="tbd">要確認：商品カテゴリーごとの表示ルール</span></p>
+    </div>
+
+    <h2 class="sec-title">PR実施後について</h2>
+    <div class="care">
+      <p>ご希望がある場合には、投稿後、取得できた範囲で閲覧数やリーチなどの数字を1〜2項目、簡単に共有します。</p>
+      <p>Instagram側で取得できる数字や確認できる期間は投稿形式等によって異なるため、詳細なレポートの提出をお約束するものではありません。</p>
+    </div>
+
+    <!-- 最後に -->
+    <h2 class="sec-title">最後に</h2>
+    <div class="closing">
+      <p>ここまで選んでいただいた内容とご予算をもとに、実施できそうな形をこちらで確認します。</p>
+      <p>御社のご都合や今後の方向性、ブランディングを一番大切にしていただいて大丈夫です。</p>
+      <p>もしよかったら、ひとつのアイデアとしてご検討いただけたら嬉しいです。</p>
+    </div>
+
+    <label class="check" style="justify-content:center;font-weight:500;font-size:14px;margin-top:20px;">
+      <input type="checkbox" id="agree" required>
+      <span>個人情報の取り扱いに同意する（必須）<br><a href="https://iobschool.github.io/iob-privacy/" target="_blank" rel="noopener">個人情報の取り扱いについて</a></span>
+    </label>
+
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button type="submit" class="submit" id="submitBtn">希望内容と予算を送る</button>
+    <p class="err" id="formErr"></p>
+  </form>
+
+  <!-- 第二の入口：今回は見送るけれど、今後のお声がけは受け取りたい方へ（主ボタンより目立たせない） -->
+  <details class="later" id="laterBox">
+    <summary>今回は見送るけれど、今後のお声がけは受け取りたい方へ</summary>
+    <div class="inner">
+      <p>今回は時期などが合わなくても、今後、御社の商品やブランドと相性のよさそうな撮影・ご紹介の機会があれば、レムケなつこからまたお声がけしてもよい場合はこちらからお知らせください。</p>
+      <form id="laterForm" novalidate>
+        <div class="field"><label class="l" for="lCompany">会社名<span class="req">必須</span></label><input type="text" id="lCompany" name="company" required autocomplete="organization"></div>
+        <div class="field"><label class="l" for="lPerson">ご担当者名<span class="req">必須</span></label><input type="text" id="lPerson" name="person" required autocomplete="name"></div>
+        <div class="field"><label class="l" for="lEmail">メールアドレス<span class="req">必須</span></label><input type="email" id="lEmail" name="email" required autocomplete="email"></div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" id="laterBtn">今後のお声がけを希望する</button>
+        <p class="err" id="laterErr"></p>
+      </form>
+    </div>
+  </details>
+
+  </div><!-- /pageMain -->
+
+  <!-- 送信後（申込） -->
+  <section class="done" id="thanks">
+    <div class="mincho">ありがとうございます。</div>
+    <p>内容とご予算を一度こちらで拝見し、実施できそうな形と正式な金額をご連絡します。<br>この時点では、まだ実施内容・金額・ご契約は確定していません。</p>
+    <p>原則2営業日以内<span class="tbd">仮置き</span>に、メールでご連絡します。</p>
+
+    <div id="timerexBox">
+      <h3>オンラインで少し相談したい方へ</h3>
+      <p>下からご都合のよい日時をお選びください。<br>商品やご希望の撮影イメージ、予算などを20分ほどで確認します。</p>
+      <div id="timerex_calendar"></div>
+    </div>
+
+    <p>相談を希望されなかった場合は、そのままメールをお待ちください。</p>
+    <p id="thanksInvoice" style="display:none;">請求書をご希望いただいた場合も、この時点ではまだ発行されません。<br>実施内容と金額が決まり、双方で確認できたあとに、登録いただいたメールアドレスへ自動でお送りします。</p>
+  </section>
+
+  <!-- 送信後（見送り・今後連絡OK） -->
+  <section class="done" id="laterThanks">
+    <div class="mincho">ありがとうございます。</div>
+    <p>今回は見送りとして承りました。</p>
+    <p>今後、御社の商品やブランドと相性のよさそうな撮影・ご紹介の機会がありましたら、レムケなつこから改めてお声がけすることがあります。</p>
+  </section>
+
+  <!-- 自動送信が使えないとき（送れたフリをしない） -->
+  <section class="done" id="fallback">
+    <div class="mincho">恐れ入ります。<br>あと一手間だけお願いします。</div>
+    <p>ただいまフォームの自動送信が使えない状態です。<br>下のボタンを押すと、入力いただいた内容が入ったメールが開きます。<br>そのまま送信していただければ、内容を受け付けます。</p>
+    <a id="fallbackMail" class="fallback-btn" href="#">メールで内容を送る</a>
+    <p style="font-size:13px;">うまく開かない場合は、school@iob.bio 宛に<br>会社名・ご担当者名と、このページの内容をお送りください。</p>
+  </section>
+
+</div>
+
+<footer>
+  Institut für Organic Business GmbH<br>
+  お問い合わせ：school@iob.bio<br><br>
+  <a href="https://iobschool.github.io/iob-privacy/" target="_blank" rel="noopener">個人情報の取り扱いについて</a><br><br>
+  Copyright ©2026 Institut für Organic Business GmbH. All Rights Reserved.
+</footer>
+
+<script>
+  // ── 送信先：えらべるPR専用のGASウェブアプリ（有料申込_2026のタブ「えらべるPR_11月ビオホテル_2026-10」に書く）。未設定の間は送れたフリをせずメールに切り替える ──
+  const GAS_URL = "";
+  // ── TimeRex：「オンラインで相談したい」にチェックした人だけ、送信後に予約画面を出す（20分）。URLは本人確認後に入れる ──
+  const TIMEREX_URL = "";
+
+  // ── 流入元（?src=）：どのDM・どの会社向けリンクから来たか（個人情報なし） ──
+  const SRC = (new URLSearchParams(location.search).get("src") || "direct").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 30) || "direct";
+
+  const form = document.getElementById("applyForm");
+  const LABELS = {
+    q1: { hotel: "2026年11月のオーストリア・ビオホテル滞在中に撮影したい", other: "ビオホテル以外の時期・場所で相談したい", undecided: "まだ決めていないので相談したい" },
+    q2: { stories: "ストーリーズ中心", feed: "フィード投稿＋ストーリーズ", reel: "リール＋ストーリーズ", all: "リール＋フィード＋ストーリーズ", undecided: "まだ決めていない／提案してほしい" },
+    q3: { visual: "商品・風景・文字を中心に見せたい", voice: "声や短いコメントを入れたい", appear: "本人が出演して商品をご紹介したい", expert: "専門家として商品の背景や特徴についても解説してほしい", propose: "内容に合う方法を提案してほしい" },
+    q5: { hand: "すでにレムケなつこの手元にある", eu: "ドイツ国内／EU圏内から送付予定", intl: "日本などEU圏外から国際発送予定", none: "商品の発送は不要", unknown: "まだ分からない" }
+  };
+  // 参考価格（本人確定10/14）：下限＝基準額＋関わり方の加算／上限＝下限＋2万円（下には幅を出さない）
+  const BASE = { stories: 5, feed: 8, reel: 14, all: 18 };
+  const ADD  = { visual: 0, voice: 1, appear: 2, expert: 4 };
+
+  function val(name){ var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : ""; }
+
+  // ── 設問の選択に応じた文の出し分け（data-show="q1=hotel&q5=intl|unknown"） ──
+  function updateConds(){
+    document.querySelectorAll(".cond[data-show]").forEach(function(box){
+      var ok = box.getAttribute("data-show").split("&").every(function(part){
+        var kv = part.split("="); return kv[1].split("|").indexOf(val(kv[0])) >= 0;
+      });
+      box.classList.toggle("on", ok);
+    });
+  }
+
+  // ── 今回の参考価格 ──
+  function priceInfo(){
+    var q1 = val("q1"), q2 = val("q2"), q3 = val("q3");
+    var html = "", text = "";
+    if (!q2 || (q2 !== "undecided" && !q3)) {
+      html = "<p>上の項目を選んでいただくと、ここに今回の参考価格が表示されます。</p><p>まだ決められない項目は「相談したい」「提案してほしい」のままでも大丈夫です。</p>";
+      text = "（未表示）";
+    } else if (q2 === "undecided") {
+      html = "<p>発信方法がまだ決まっていないため、参考価格はまだ表示していません。</p><p>ご希望が決まっていなくても、そのまま送っていただいて大丈夫です。商品やご予算を拝見して、合いそうな形をご提案します。</p>";
+      text = "（発信方法が未定のため表示なし）";
+    } else if (q3 === "propose") {
+      var b = BASE[q2];
+      html = "<p>選択された発信方法の参考価格は</p><span class=\"yen\">約 " + b + "万円〜</span><p>です。</p><p>レムケなつこの関わり方は「提案してほしい」が選択されているため、出演・解説等の追加分はまだ含めていません。<br>内容を拝見したうえでご提案します。</p>";
+      text = "約" + b + "万円〜（関わり方は提案希望）";
+    } else {
+      var lo = BASE[q2] + ADD[q3], hi = lo + 2;
+      html = "<p>今回の参考価格：</p><span class=\"yen\">約 " + lo + "万円〜" + hi + "万円</span>";
+      if (q1 === "other") html += "<p class=\"fine\">※ビオホテル以外の時期・場所を選ばれた場合、この金額はコンテンツ制作部分の参考価格です。移動・撮影場所・必要な手配等で追加費用が必要な場合には、事前にご相談します。</p>";
+      text = "約" + lo + "万円〜" + hi + "万円";
+    }
+    return { html: html, text: text };
+  }
+  function updatePrice(){ document.getElementById("priceOut").innerHTML = priceInfo().html; }
+
+  form.addEventListener("change", function(){ updateConds(); updatePrice(); });
+  updateConds(); updatePrice();
+
+  // 請求書にチェックした人にだけ宛名欄を出す
+  document.getElementById("invoice").addEventListener("change", function(){
+    var on = this.checked;
+    document.getElementById("invoiceNameWrap").style.display = on ? "block" : "none";
+    document.getElementById("invoiceName").required = on;
+  });
+
+  function showDone(id){
+    document.getElementById("pageMain").style.display = "none";
+    var el = document.getElementById(id);
+    el.style.display = "block";
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 30, behavior: "smooth" });
+  }
+  function fallbackMail(subject, body){
+    document.getElementById("fallbackMail").href = "mailto:school@iob.bio?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    showDone("fallback");
+  }
+  // GASは exec → googleusercontent へ302されるため、payload をURLエンコードで送る（GAS側は e.parameter.payload を先に読む）
+  function post(data){
+    return fetch(GAS_URL, {
+      method: "POST", mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=utf-8" },
+      body: new URLSearchParams({ payload: JSON.stringify(data) })
+    });
+  }
+  function gasReady(){ return GAS_URL && GAS_URL.indexOf("https://script.google.com/") === 0; }
+
+  function firstInvalid(f){
+    var bad = null;
+    f.querySelectorAll("[required]").forEach(function(el){
+      if (bad) return;
+      if (el.type === "radio") { if (!f.querySelector('input[name="' + el.name + '"]:checked')) bad = el; }
+      else if (!el.checkValidity()) bad = el;
+    });
+    return bad;
+  }
+
+  // ── 申込送信 ──
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var err = document.getElementById("formErr");
+    var bad = firstInvalid(form);
+    if (bad) {
+      err.textContent = bad.id === "agree" ? "個人情報の取り扱いへの同意にチェックをお願いします。" : (bad.id === "amount" ? "金額は1円以上の数字でご入力ください。" : "未入力の項目があります。ご確認ください。");
+      err.classList.add("on");
+      var box = bad.closest(".q, .field, .block, label") || bad;
+      box.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    err.classList.remove("on");
+    if (form.website.value) return;   // 自動送信よけ
+
+    var btn = document.getElementById("submitBtn");
+    btn.disabled = true; btn.textContent = "送信中…";
+    var q4 = Array.prototype.map.call(form.querySelectorAll('input[name="q4"]:checked'), function(x){ return x.value; });
+    var data = {
+      kind: "申込",
+      q1: LABELS.q1[val("q1")], q2: LABELS.q2[val("q2")], q3: LABELS.q3[val("q3")], q4: q4.join("／"), q5: LABELS.q5[val("q5")],
+      price: priceInfo().text,
+      amount: String(Math.floor(Number(form.amount.value))),
+      company: form.company.value.trim(), person: form.person.value.trim(), email: form.email.value.trim(), location: val("location"),
+      product: form.product.value.trim(), productUrl: form.productUrl.value.trim(), note: form.note.value.trim(),
+      consult: form.consult.checked, invoice: form.invoice.checked, invoiceName: form.invoiceName.value.trim(), receipt: form.receipt.checked,
+      src: SRC
+    };
+
+    function thanks(){
+      document.getElementById("thanksInvoice").style.display = data.invoice ? "block" : "none";
+      if (data.consult) showTimeRex();
+      showDone("thanks");
+    }
+    function fb(){
+      var body = "えらべるPR（11月ビオホテルPR）の希望内容を送ります。\n\n" +
+        "1. 撮影の時期・場所：" + data.q1 + "\n2. ご紹介の形：" + data.q2 + "\n3. 関わり方：" + data.q3 + "\n4. 撮影イメージ：" + (data.q4 || "（なし）") + "\n5. 商品の状態：" + data.q5 +
+        "\n参考価格：" + data.price + "\n今回の金額：" + data.amount + "円\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n所在地：" + data.location +
+        "\n商品名：" + data.product + "\n商品URL：" + (data.productUrl || "") + "\n伝えておきたいこと：" + (data.note || "") +
+        "\nオンライン相談：" + (data.consult ? "希望する" : "なし") + "\n請求書：" + (data.invoice ? "希望（宛名：" + data.invoiceName + "）" : "なし") + "\n領収書：" + (data.receipt ? "希望" : "なし") + "\n";
+      fallbackMail("えらべるPR 希望内容（" + data.company + "）", body);
+    }
+    if (!gasReady()) { fb(); return; }
+    post(data).then(thanks).catch(fb);
+  });
+
+  // ── 第二の入口：今回見送り・今後連絡OK ──
+  document.getElementById("laterForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = this, err = document.getElementById("laterErr");
+    if (firstInvalid(f)) { err.textContent = "会社名・ご担当者名・メールアドレスをご入力ください。"; err.classList.add("on"); return; }
+    err.classList.remove("on");
+    if (f.website.value) return;
+    var btn = document.getElementById("laterBtn");
+    btn.disabled = true; btn.textContent = "送信中…";
+    var data = { kind: "今回見送り・今後連絡OK", company: f.company.value.trim(), person: f.person.value.trim(), email: f.email.value.trim(), src: SRC };
+    function fb(){
+      fallbackMail("えらべるPR 今後のお声がけ希望（" + data.company + "）",
+        "今回は見送りますが、今後のお声がけを希望します。\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n");
+    }
+    if (!gasReady()) { fb(); return; }
+    post(data).then(function(){ showDone("laterThanks"); }).catch(fb);
+  });
+
+  // ── TimeRex 予約画面の埋め込み（公式の埋め込みスクリプト） ──
+  function showTimeRex(){
+    var box = document.getElementById("timerexBox");
+    box.style.display = "block";
+    var cal = document.getElementById("timerex_calendar");
+    if (!TIMEREX_URL) { cal.innerHTML = "<p class=\"fine\"><span class=\"tbd\">要確認：TimeRexの予約ページURL未設定</span></p>"; return; }
+    cal.setAttribute("data-url", TIMEREX_URL);
+    var s = document.createElement("script");
+    s.src = "https://asset.timerex.net/js/embed.js";
+    s.onload = function(){ try { TimerexCalendar(); } catch (e) { cal.innerHTML = "<a class=\"fallback-btn\" href=\"" + TIMEREX_URL + "\" target=\"_blank\" rel=\"noopener\">日程を選ぶ</a>"; } };
+    s.onerror = function(){ cal.innerHTML = "<a class=\"fallback-btn\" href=\"" + TIMEREX_URL + "\" target=\"_blank\" rel=\"noopener\">日程を選ぶ</a>"; };
+    document.body.appendChild(s);
+  }
+</script>
+</body>
+</html>
