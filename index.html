@@ -8,6 +8,7 @@
 <meta name="description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。ご希望の形を選ぶと、今回の参考価格が表示されます。">
 <meta property="og:title" content="えらべるPR｜内容も、ご予算も。ブランドに合う形から。">
 <meta property="og:description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。">
+<meta property="og:image" content="https://iobschool.github.io/eraberu-pr/img/natsuko.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,12 +32,16 @@
   p:last-child{margin-bottom:0;}
 
   /* ===== 冒頭 ===== */
-  .head{padding:44px 0 34px;border-bottom:1px solid var(--line);}
-  .head .logo{display:block;width:120px;margin-bottom:26px;}
-  .head h1{font-size:40px;font-weight:900;color:var(--point);letter-spacing:.04em;line-height:1.3;}
-  .head .tag{font-family:"Zen Old Mincho",serif;font-size:19px;font-weight:700;margin:8px 0 22px;line-height:1.6;}
-  .head .who{font-size:14px;color:var(--sub);line-height:1.7;}
-  .head .who b{font-family:"Zen Old Mincho",serif;font-size:17px;color:var(--ink);}
+  .head{padding:26px 0 30px;border-bottom:1px solid var(--line);}
+  .head .logo{display:block;width:96px;margin-bottom:16px;}
+  .head .grid{display:flex;gap:12px;height:470px;}
+  .head h1{writing-mode:vertical-rl;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:26px;line-height:1.62;letter-spacing:.1em;height:100%;color:var(--ink);}
+  .head h1 .o{color:var(--point);font-size:1.18em;}
+  .head .ph{flex:1;min-width:0;border-radius:18px;background:url("img/natsuko.jpg") 38% 18%/cover;position:relative;}
+  .head .who{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,253,248,.93);border-radius:10px;padding:8px 10px;font-size:10.5px;line-height:1.6;color:var(--sub);}
+  .head .who b{font-family:"Zen Old Mincho",serif;font-size:14px;color:var(--ink);}
+  .head .ig{display:inline-block;margin-top:4px;font-size:11.5px;color:var(--point);font-weight:700;text-decoration:none;}
+  @media(min-width:560px){ .head .grid{height:560px;} .head h1{font-size:32px;} }
   .intro{padding:34px 0 10px;}
   .note-box{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;margin-top:18px;}
 
@@ -55,6 +60,20 @@
   .fine{font-size:13px;color:var(--sub);line-height:1.8;margin-top:12px;}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 8px;}
   @media(max-width:420px){.grid2{grid-template-columns:1fr;}}
+
+  /* ===== Instagram・実績・参考リール ===== */
+  .ig-line{font-size:14px;margin-top:16px;}
+  .ig-line a{font-weight:700;}
+  .works{margin:34px 0 10px;}
+  .works .sub{font-size:14.5px;}
+  .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;}
+  .reel{display:block;text-decoration:none;color:var(--ink);}
+  .reel img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;border:1px solid var(--line);}
+  .reel b{display:block;font-size:13px;line-height:1.5;margin-top:8px;}
+  .reel span{display:block;font-size:11.5px;color:var(--sub);line-height:1.6;margin-top:2px;}
+  @media(max-width:420px){ .reels{gap:7px;} .reel b{font-size:12px;} .reel span{font-size:11px;} }
+  .price-fact{display:none;}
+  body.fact-ok .price-fact{display:inline;}
 
   /* ===== 参考価格 ===== */
   .price{background:#fff;border:2px solid var(--point);border-radius:16px;padding:22px 18px;margin:30px 0 22px;}
@@ -125,15 +144,19 @@
   // 公開状態："draft"＝下書き（【要確認】が黄色で見える）／"live"＝公開（【要確認】を隠す）
   window.IOB_PHASE = "live";
   if (window.IOB_PHASE === "live") document.body.classList.add("live");
+  // 過去の金額（リール1本24万円）は本人の確認が取れてから true にする（横山10/14：確認できるまで公開しない）
+  window.PRICE_FACT_OK = false;
+  if (window.PRICE_FACT_OK) document.body.classList.add("fact-ok");
 </script>
 
 <div class="wrap">
 
   <header class="head">
     <img class="logo" src="iob-logo-orange.png" alt="Institut für Organic Business">
-    <h1>えらべるPR</h1>
-    <div class="tag">内容も、ご予算も。<br>ブランドに合う形から。</div>
-    <div class="who"><b>レムケなつこ</b><br>ドイツ在住オーガニック教育の専門家</div>
+    <div class="grid">
+      <h1><span class="o">えらべるPR</span><br>内容も、ご予算も。<br>ブランドに合う形から。</h1>
+      <div class="ph" role="img" aria-label="レムケなつこ"><div class="who"><b>レムケなつこ</b><br>ドイツ在住<br>オーガニック教育の専門家<br><a class="ig" href="https://www.instagram.com/natsuko_bio" target="_blank" rel="noopener">Instagram @natsuko_bio</a></div></div>
+    </div>
   </header>
 
   <div id="pageMain">
@@ -147,6 +170,7 @@
     <p>このページでは、どんな形でご紹介するのがよさそうか、ご希望をいくつか選んでいただけるようにしました。</p>
     <p>もし何か相性がよさそうでしたら、というくらいの気持ちで受け取っていただけたら嬉しいです。</p>
     <div class="note-box">※このページを送信した時点では、ご契約・ご請求は確定しません。</div>
+    <p class="ig-line">普段の発信や雰囲気は、Instagramでもご覧いただけます。<br><a href="https://www.instagram.com/natsuko_bio" target="_blank" rel="noopener">レムケなつこのInstagramはこちら</a></p>
   </section>
 
   <form id="applyForm" novalidate>
@@ -246,6 +270,21 @@
       <div class="cond" data-show="q1=other|undecided&amp;q5=eu|intl|unknown">
         <p>11月のビオホテル撮影用の発送期限は適用されません。</p>
         <p>実施時期・場所が決まりましたら、商品をいつまでにお送りいただく必要があるか個別にご案内します。</p>
+      </div>
+    </div>
+
+    <!-- これまでのご紹介（実績）・参考リール -->
+    <div class="works">
+      <h2 class="sec-title">これまでのご紹介</h2>
+      <p>これまでは、オーガニックに関わるスクール生のお店や商品を中心に、Instagramでご紹介してきました。</p>
+      <p>外部企業からご依頼いただくこともあり、過去には韓国の大手オーガニックコスメメーカーの商品を、リールでご紹介したことがあります。<span class="price-fact">その際は、リール1本24万円でのご依頼でした。</span></p>
+
+      <h2 class="sec-title">撮影・発信の雰囲気はこちら</h2>
+      <p class="sub">今回のPRそのものではありませんが、映像や発信の雰囲気が伝わりやすいリールを3本ご紹介します。</p>
+      <div class="reels">
+        <a class="reel" href="https://www.instagram.com/reel/DbMJ9R9oyxl/" target="_blank" rel="noopener"><img src="img/reel_tannerhof.jpg" alt="ビオホテルでのリトリートのリール" loading="lazy"><b>ビオホテルでのリトリート</b><span>ホテルでの滞在と空気感をまとめたリール</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/Da27XyuNDLN/" target="_blank" rel="noopener"><img src="img/reel_interview.jpg" alt="商品を手にしたインタビューのリール" loading="lazy"><b>商品を手にしたインタビュー</b><span>人と商品を一緒に撮影したときの雰囲気</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/DBtPhZJs20S/" target="_blank" rel="noopener"><img src="img/reel_rice.jpg" alt="約97万回再生されたリール" loading="lazy"><b>約97万回再生されたリール</b><span>これまでで最も多く見ていただいた投稿</span></a>
       </div>
     </div>
 
