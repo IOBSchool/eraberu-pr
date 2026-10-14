@@ -123,7 +123,7 @@
 <body>
 <script>
   // 公開状態："draft"＝下書き（【要確認】が黄色で見える）／"live"＝公開（【要確認】を隠す）
-  window.IOB_PHASE = "draft";
+  window.IOB_PHASE = "live";
   if (window.IOB_PHASE === "live") document.body.classList.add("live");
 </script>
 
@@ -413,7 +413,7 @@
 
 <script>
   // ── 送信先：えらべるPR専用のGASウェブアプリ（有料申込_2026のタブ「えらべるPR_11月ビオホテル_2026-10」に書く）。未設定の間は送れたフリをせずメールに切り替える ──
-  const GAS_URL = "";
+  const GAS_URL = "https://script.google.com/macros/s/AKfycbzBowjG6t3QlUyQsbCdz2ixgtETF7fe1KD6_Pz_WLexzXQvQWaVlySRtzyHksSBRo-s/exec";
   // ── TimeRex：「オンラインで相談したい」にチェックした人だけ、送信後に予約画面を出す（20分）。URLは本人確認後に入れる ──
   const TIMEREX_URL = "https://timerex.net/s/organiclifeingermany_ae43/9625aba1";
 
