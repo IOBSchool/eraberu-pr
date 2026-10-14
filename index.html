@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>えらべるPR｜内容も、ご予算も。ブランドに合う形から。｜レムケなつこ</title>
+<title>選べる投げ銭PR｜内容も、ご予算も。ブランドに合う形から。｜レムケなつこ</title>
 <meta name="description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。ご希望の形を選ぶと、今回の参考価格が表示されます。">
-<meta property="og:title" content="えらべるPR｜内容も、ご予算も。ブランドに合う形から。">
+<meta property="og:title" content="選べる投げ銭PR｜内容も、ご予算も。ブランドに合う形から。">
 <meta property="og:description" content="2026年11月、オーストリアのビオホテル滞在にあわせた商品撮影・ご紹介のご提案です。">
 <meta property="og:image" content="https://iobschool.github.io/eraberu-pr/img/natsuko.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,12 +36,14 @@
   .head .logo{display:block;width:96px;margin-bottom:16px;}
   .head .grid{display:flex;gap:12px;height:470px;}
   .head h1{writing-mode:vertical-rl;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:26px;line-height:1.62;letter-spacing:.1em;height:100%;color:var(--ink);}
-  .head h1 .o{color:var(--point);font-size:1.18em;}
+  .head h1 .o{color:var(--point);font-size:1.12em;}
+  .head h1 .tcy{text-combine-upright:all;}
   .head .ph{flex:1;min-width:0;border-radius:18px;background:url("img/natsuko.jpg") 38% 18%/cover;position:relative;}
   .head .who{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,253,248,.93);border-radius:10px;padding:8px 10px;font-size:10.5px;line-height:1.6;color:var(--sub);}
   .head .who b{font-family:"Zen Old Mincho",serif;font-size:14px;color:var(--ink);}
   .head .ig{display:inline-block;margin-top:4px;font-size:11.5px;color:var(--point);font-weight:700;text-decoration:none;}
   @media(min-width:560px){ .head .grid{height:560px;} .head h1{font-size:32px;} }
+  .head .what{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:16px;line-height:1.85;margin-top:20px;}
   .intro{padding:34px 0 10px;}
   .note-box{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;margin-top:18px;}
 
@@ -155,9 +157,10 @@
   <header class="head">
     <img class="logo" src="iob-logo-orange.png" alt="Institut für Organic Business">
     <div class="grid">
-      <h1><span class="o">えらべるPR</span><br>内容も、ご予算も。<br>ブランドに合う形から。</h1>
+      <h1><span class="o">選べる投げ銭<span class="tcy">PR</span></span><br>内容も、ご予算も。<br>ブランドに合う形から。</h1>
       <div class="ph" role="img" aria-label="レムケなつこ"><div class="who"><b>レムケなつこ</b><br>ドイツ在住<br>オーガニック教育の専門家<br><span class="ig">Instagram @natsuko_bio</span></div></div>
     </div>
+    <p class="what">撮影・紹介したい内容を選び、参考価格を確認したうえで、最後の金額を自由に決めていただくPRです。</p>
   </header>
 
   <div id="pageMain">
@@ -184,7 +187,7 @@
       <label class="opt"><input type="radio" name="q1" value="undecided"><span>まだ決めていないので相談したい</span></label>
       <div class="cond" data-show="q1=hotel">
         <p>ビオホテルでの滞在日数と撮影できる時間には限りがあります。</p>
-        <p>今回のビオホテル撮影は、3〜4社程度まで、リール制作は2本までを予定しています。</p>
+        <p>今回のビオホテル撮影は、最大3社まで、リール制作は2本までを予定しています。</p>
         <p>ご希望いただいた内容と、現地で確保できる撮影時間を確認しながら、実施内容を調整します。</p>
         <p>ご希望が重なった場合には、撮影内容や実施時期をご相談させていただく場合があります。</p>
         <p>11月のビオホテル撮影が難しい場合も、別の時期・場所での撮影をご相談いただけます。</p>
@@ -193,6 +196,7 @@
         <p>別の時期・場所での撮影もご相談いただけます。</p>
         <p>移動・撮影場所・必要な手配などによって追加費用が発生する場合には、実施前に内容と金額をご相談します。</p>
       </div>
+      <p class="fine">※撮影できる件数や時期には限りがあるため、受付状況によっては予告なく受付を終了する場合があります。また、ご相談いただくタイミングや撮影条件によっては、今回のPRをお受けできない場合があります。あらかじめご了承ください。</p>
     </div>
 
     <!-- Q2 -->
@@ -590,12 +594,12 @@
       showDone("thanks");
     }
     function fb(){
-      var body = "えらべるPR（11月ビオホテルPR）の希望内容を送ります。\n\n" +
+      var body = "選べる投げ銭PR（11月ビオホテルPR）の希望内容を送ります。\n\n" +
         "1. 撮影の時期・場所：" + data.q1 + "\n2. ご紹介の形：" + data.q2 + "\n3. 関わり方：" + data.q3 + "\n4. 撮影イメージ：" + (data.q4 || "（なし）") + "\n5. 商品の状態：" + data.q5 +
         "\n参考価格：" + data.price + "\n今回の金額：" + data.amount + "円\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n所在地：" + data.location +
         "\n商品名：" + data.product + "\n商品URL：" + (data.productUrl || "") + "\n伝えておきたいこと：" + (data.note || "") +
         "\nオンライン相談：" + (data.consult ? "希望する" : "なし") + "\n請求書：" + (data.invoice ? "希望（宛名：" + data.invoiceName + "）" : "なし") + "\n領収書：" + (data.receipt ? "希望" : "なし") + "\n";
-      fallbackMail("えらべるPR 希望内容（" + data.company + "）", body);
+      fallbackMail("選べる投げ銭PR 希望内容（" + data.company + "）", body);
     }
     if (!gasReady()) { fb(); return; }
     post(data).then(thanks).catch(fb);
@@ -612,7 +616,7 @@
     btn.disabled = true; btn.textContent = "送信中…";
     var data = { kind: "今回見送り・今後連絡OK", company: f.company.value.trim(), person: f.person.value.trim(), email: f.email.value.trim(), src: SRC };
     function fb(){
-      fallbackMail("えらべるPR 今後のお声がけ希望（" + data.company + "）",
+      fallbackMail("選べる投げ銭PR 今後のお声がけ希望（" + data.company + "）",
         "今回は見送りますが、今後のお声がけを希望します。\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n");
     }
     if (!gasReady()) { fb(); return; }
