@@ -66,12 +66,13 @@
   .ig-line a{font-weight:700;}
   .works{margin:34px 0 10px;}
   .works .sub{font-size:14.5px;}
-  .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;}
+  .reels{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px;}
+  @media(max-width:560px){ .reels{grid-template-columns:repeat(2,1fr);gap:14px 10px;} }
   .reel{display:block;text-decoration:none;color:var(--ink);}
   .reel img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;border:1px solid var(--line);}
   .reel b{display:block;font-size:13px;line-height:1.5;margin-top:8px;}
   .reel span{display:block;font-size:11.5px;color:var(--sub);line-height:1.6;margin-top:2px;}
-  @media(max-width:420px){ .reels{gap:7px;} .reel b{font-size:12px;} .reel span{font-size:11px;} }
+  
   .price-fact{display:none;}
   body.fact-ok .price-fact{display:inline;}
 
@@ -145,7 +146,7 @@
   window.IOB_PHASE = "live";
   if (window.IOB_PHASE === "live") document.body.classList.add("live");
   // 過去の金額（リール1本24万円）は本人の確認が取れてから true にする（横山10/14：確認できるまで公開しない）
-  window.PRICE_FACT_OK = false;
+  window.PRICE_FACT_OK = true;   // 本人確認済み（10/14）
   if (window.PRICE_FACT_OK) document.body.classList.add("fact-ok");
 </script>
 
@@ -277,14 +278,15 @@
     <div class="works">
       <h2 class="sec-title">これまでのご紹介</h2>
       <p>これまでは、オーガニックに関わるスクール生のお店や商品を中心に、Instagramでご紹介してきました。</p>
-      <p>外部企業からご依頼いただくこともあり、過去には韓国の大手オーガニックコスメメーカーの商品を、リールでご紹介したことがあります。<span class="price-fact">その際は、リール1本24万円でのご依頼でした。</span></p>
+      <p>外部企業から有償でご依頼いただくこともあり、過去には韓国の大手オーガニックコスメメーカーの商品を、リールでご紹介したことがあります。<span class="price-fact">その際は、リール1本24万円でのご依頼でした。</span></p>
 
       <h2 class="sec-title">撮影・発信の雰囲気はこちら</h2>
-      <p class="sub">今回のPRそのものではありませんが、映像や発信の雰囲気が伝わりやすいリールを3本ご紹介します。</p>
+      <p class="sub">今回のPRそのものではありませんが、映像や発信の雰囲気が伝わりやすいリールを4本ご紹介します。</p>
       <div class="reels">
         <a class="reel" href="https://www.instagram.com/reel/DbMJ9R9oyxl/" target="_blank" rel="noopener"><img src="img/reel_tannerhof.jpg" alt="ビオホテルでのリトリートのリール" loading="lazy"><b>ビオホテルでのリトリート</b><span>ホテルでの滞在と空気感をまとめたリール</span></a>
         <a class="reel" href="https://www.instagram.com/reel/Da27XyuNDLN/" target="_blank" rel="noopener"><img src="img/reel_interview.jpg" alt="商品を手にしたインタビューのリール" loading="lazy"><b>商品を手にしたインタビュー</b><span>人と商品を一緒に撮影したときの雰囲気</span></a>
         <a class="reel" href="https://www.instagram.com/reel/DBtPhZJs20S/" target="_blank" rel="noopener"><img src="img/reel_rice.jpg" alt="約97万回再生されたリール" loading="lazy"><b>約97万回再生されたリール</b><span>これまでで最も多く見ていただいた投稿</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/C392BLvR8sZ/" target="_blank" rel="noopener"><img src="img/reel_supermarket.jpg" alt="スーパーの売り場で撮影したリール" loading="lazy"><b>スーパーの売り場で撮影したリール</b><span>約96万回再生された投稿</span></a>
       </div>
     </div>
 
