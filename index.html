@@ -223,9 +223,22 @@
       <p class="fine">まず第一希望を教えてください。実際の内容は、商品・ご予算・撮影条件を見てご提案します。</p>
     </div>
 
-    <!-- 3 関わり方 -->
+    <!-- 3 掲載期間 -->
+    <div class="q" id="periodbox">
+      <h2><span class="num">3.</span>投稿の掲載期間は、どのくらいをご希望ですか？</h2>
+      <label class="opt"><input type="radio" name="period" value="1" required><span>1ヶ月</span></label>
+      <label class="opt"><input type="radio" name="period" value="2"><span>2ヶ月</span></label>
+      <label class="opt"><input type="radio" name="period" value="3"><span>3ヶ月</span></label>
+      <label class="opt"><input type="radio" name="period" value="4"><span>4ヶ月</span></label>
+      <label class="opt"><input type="radio" name="period" value="6"><span>6ヶ月</span></label>
+      <label class="opt"><input type="radio" name="period" value="more"><span>それ以上</span></label>
+      <label class="opt"><input type="radio" name="period" value="ask"><span>相談したい</span></label>
+      <p class="fine">ご希望として教えてください。実際の掲載期間は、投稿内容と今回の金額を確認したうえでご相談します。</p>
+    </div>
+
+    <!-- 4 関わり方 -->
     <div class="q" id="q3box">
-      <h2><span class="num">3.</span>私に、どんな形で紹介してほしいですか？</h2>
+      <h2><span class="num">4.</span>私に、どんな形で紹介してほしいですか？</h2>
       <label class="opt"><input type="radio" name="q3" value="visual" required><span>商品・風景・文字を中心に見せたい</span></label>
       <label class="opt"><input type="radio" name="q3" value="voice"><span>声や短いコメントを入れたい</span></label>
       <label class="opt"><input type="radio" name="q3" value="appear"><span>本人が出演して商品をご紹介したい</span></label>
@@ -235,10 +248,14 @@
 
     <!-- 4 商品の基本情報 -->
     <h2 class="sec-title">ご紹介を希望する商品について</h2>
+    <p class="fine" style="margin-top:0">複数の商品をご希望の場合は、商品ごとに商品名・特徴・形状が分かるようにご記入ください。</p>
     <div class="field"><label class="l" for="product">商品名<span class="req">必須</span></label><input type="text" id="product" name="product" required></div>
     <div class="field"><label class="l" for="category">カテゴリー<span class="req">必須</span></label><input type="text" id="category" name="category" required placeholder="例）お茶、UV（日焼け止め）、サプリメント"></div>
     <div class="field"><label class="l" for="form_">容量・形状<span class="req">必須</span></label><input type="text" id="form_" name="productForm" required placeholder="例）50g・粉末、100ml・液体、60粒・カプセル">
       <p class="fine">粉・液体・錠剤・クリームなど、発送にも関係するため、形状もお願いします。</p></div>
+    <div class="field"><label class="l" for="ingredients">成分・原材料<span class="opt-tag">インナーケア・サプリ等は必須</span></label><textarea id="ingredients" name="ingredients" style="min-height:70px"></textarea>
+      <p class="fine">インナーケア・サプリ等の場合は、送付条件の確認に必要なため、商品名・成分・形状（粉・錠剤・液体など）も教えてください。</p>
+      <p class="fine">パッケージ変更・リニューアル中の商品は、撮影・投稿で紹介してよいパッケージの商品をお送りください。現在販売中の商品と撮影する商品が異なる場合は、その旨も教えてください。</p></div>
     <div class="field"><label class="l" for="points">この商品の「ここを知ってほしい」を、3つまで教えてください。<span class="req">必須</span></label><textarea id="points" name="points" required></textarea>
       <p class="fine">撮影・投稿で一番大切にしたい部分です。短い箇条書きで大丈夫です。</p></div>
     <div class="field"><label class="l" for="okWords">投稿で使ってよい表現を教えてください。<span class="req">必須</span></label><textarea id="okWords" name="okWords" required></textarea>
@@ -256,7 +273,7 @@
 
     <!-- 6 撮影イメージ（任意） -->
     <div class="q" id="q4box">
-      <h2><span class="num">4.</span>撮影の雰囲気について、希望があれば教えてください。<small>（任意・複数選択できます）</small></h2>
+      <h2><span class="num">5.</span>撮影の雰囲気について、希望があれば教えてください。<small>（任意・複数選択できます）</small></h2>
       <div class="grid2">
         <label class="opt"><input type="checkbox" name="q4" value="ホテル室内・インテリア"><span>ホテル室内・インテリア</span></label>
         <label class="opt"><input type="checkbox" name="q4" value="自然・緑"><span>自然・緑</span></label>
@@ -272,7 +289,7 @@
 
     <!-- 7 商品の場所・発送 -->
     <div class="q" id="q5box">
-      <h2><span class="num">5.</span>商品はいま、どこにありますか？</h2>
+      <h2><span class="num">6.</span>商品はいま、どこにありますか？</h2>
       <label class="opt"><input type="radio" name="q5" value="hand" required><span>すでにレムケなつこの手元にある</span></label>
       <label class="opt"><input type="radio" name="q5" value="eu"><span>ドイツ・EU圏内にある（そこから送る）</span></label>
       <label class="opt"><input type="radio" name="q5" value="intl"><span>日本などEU圏外にある（国際発送が必要）</span></label>
@@ -304,7 +321,7 @@
     <div class="works">
       <h2 class="sec-title">これまでのご紹介</h2>
       <p>これまでは、オーガニックに関わるスクール生のお店や商品を中心に、Instagramでご紹介してきました。</p>
-      <p>外部企業から有償でご依頼いただくこともあり、過去には韓国の大手オーガニックコスメメーカーの商品を、リールでご紹介したことがあります。<span class="price-fact">その際は、リール1本24万円でのご依頼でした。</span></p>
+      <p>外部企業から有償でご依頼いただくこともあり、以前の認証取得済みオーガニックコスメ他社案件では、リール1本を4ヶ月掲載する形で、<span class="price-fact">22万円と商品の無償提供という条件でご依頼いただきました。</span></p>
 
       <h2 class="sec-title">撮影・発信の雰囲気はこちら</h2>
       <p class="sub">今回のPRそのものではありませんが、映像や発信の雰囲気が伝わりやすいリールを4本ご紹介します。</p>
@@ -321,6 +338,7 @@
       <h2>今回の参考価格</h2>
       <div class="lead">
         <p>選んでいただいた内容をもとに、今回の参考価格を表示しています。<br>「この金額でお願いしてください」という意味ではありません。<br>どのくらいの仕事量になるのか、お互いにイメージしやすくするための目安として見てください。</p>
+        <p>掲載期間によって内容が変わる場合があります。ご希望の期間と今回の金額を確認したうえで、最終的な掲載期間をご相談します。</p>
       </div>
       <div class="out" id="priceOut" aria-live="polite"></div>
     </div>
@@ -328,7 +346,8 @@
     <!-- 金額 -->
     <div class="q amount">
       <h2>今回の金額</h2>
-      <p>今回は「投げ銭PR」として、内容をご確認いただいたうえで、御社に金額を決めていただいています。</p>
+      <p>商品は、撮影・紹介用として無償でご提供いただく形でも大丈夫です。商品提供とは別に、PRの金額は今回の投げ銭PRとして御社に決めていただいています。</p>
+      <p>内容をご確認いただいたうえで、御社に金額を決めていただいています。掲載期間もご希望を伺いますが、送信時点でその期間が確定するものではありません。ご希望内容と金額を確認したうえで、実際の掲載期間をご相談します。</p>
       <p>参考価格を見たうえで、「今回はこの金額でお願いしてみたい」と思う金額をご入力ください。参考価格と同じでなくて大丈夫です。</p>
       <div class="amount-row">
         <input type="number" name="amount" id="amount" min="1" step="1" inputmode="numeric" required placeholder="例）80000">
@@ -336,7 +355,7 @@
       </div>
       <p>送信いただいた時点では、契約・請求は確定しません。</p>
       <p>金額とご希望内容を拝見して、その内容で実施できるか、または内容の調整が必要かをお返事します。双方で内容と金額を確認できた時点で正式決定となります。</p>
-      <p>なお、今回制作した投稿・素材は、御社の公式SNS・Web・広告等で二次使用いただけます。</p>
+      <p>今回制作した投稿・素材は、リールなどの動画も含め、御社の公式SNS・Web・広告等で二次使用いただけます。</p>
     </div>
 
     <!-- 御社について -->
@@ -456,6 +475,7 @@
     q1: { hotel: "11月4日〜7日のビオホテル撮影を希望（商品が間に合う場合）", after: "商品が届いたあと、別の日に撮影・投稿してほしい", undecided: "時期は相談したい" },
     q2: { reel: "リール", carousel: "カルーセル投稿", stories: "ストーリーズ", combo: "組み合わせたい", propose: "私から提案してほしい" },
     q2b: { reel: "リール", carousel: "カルーセル投稿", stories: "ストーリーズ" },
+    period: { "1": "1ヶ月", "2": "2ヶ月", "3": "3ヶ月", "4": "4ヶ月", "6": "6ヶ月", more: "それ以上", ask: "相談したい" },
     q3: { visual: "商品・風景・文字を中心に見せたい", voice: "声や短いコメントを入れたい", appear: "本人が出演して商品をご紹介したい", expert: "オーガニックの専門家として、商品の背景や特徴にも触れてほしい", propose: "内容に合う方法を提案してほしい" },
     q5: { hand: "すでにレムケなつこの手元にある", eu: "ドイツ・EU圏内にある（そこから送る）", intl: "日本などEU圏外にある（国際発送が必要）", none: "商品の発送は不要", unknown: "未定" }
   };
@@ -583,10 +603,10 @@
     var data = {
       kind: "申込",
       q1: LABELS.q1[val("q1")], q2: q2Label(), q3: LABELS.q3[val("q3")], q4: vals("q4").join("／"), q5: LABELS.q5[val("q5")],
-      q1code: val("q1"), q5code: val("q5"), price: priceInfo().text,
+      period: LABELS.period[val("period")], q1code: val("q1"), q5code: val("q5"), price: priceInfo().text,
       amount: String(Math.floor(Number(form.amount.value))),
       company: form.company.value.trim(), person: form.person.value.trim(), email: form.email.value.trim(), location: val("location"),
-      product: form.product.value.trim(), category: form.category.value.trim(), productForm: form.productForm.value.trim(),
+      product: form.product.value.trim(), ingredients: form.ingredients.value.trim(), category: form.category.value.trim(), productForm: form.productForm.value.trim(),
       points: form.points.value.trim(), okWords: form.okWords.value.trim(), ngWords: form.ngWords.value.trim(),
       siteUrl: form.siteUrl.value.trim(), productUrl: form.productUrl.value.trim(), insta: form.insta.value.trim(), tags: form.tags.value.trim(),
       shipOk: (["intl", "unknown"].indexOf(val("q5")) >= 0) ? "確認済み（保留・返送の可能性／送り状は実際の内容）" : "",
@@ -597,9 +617,9 @@
     function thanks(){ showDone("thanks"); }
     function fb(){
       var body = "選べる投げ銭PRの希望内容を送ります。\n\n" +
-        "1. 撮影・紹介のタイミング：" + data.q1 + "\n2. 紹介の形：" + data.q2 + "\n3. 関わり方：" + data.q3 + "\n4. 撮影の雰囲気：" + (data.q4 || "（なし）") + "\n5. 商品の場所：" + data.q5 +
+        "1. 撮影・紹介のタイミング：" + data.q1 + "\n2. 紹介の形：" + data.q2 + "\n3. 掲載期間（希望）：" + data.period + "\n4. 関わり方：" + data.q3 + "\n5. 撮影の雰囲気：" + (data.q4 || "（なし）") + "\n6. 商品の場所：" + data.q5 +
         "\n参考価格：" + data.price + "\n今回の金額：" + data.amount + "円\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n所在地：" + data.location +
-        "\n\n商品名：" + data.product + "\nカテゴリー：" + data.category + "\n容量・形状：" + data.productForm +
+        "\n\n商品名：" + data.product + "\nカテゴリー：" + data.category + "\n容量・形状：" + data.productForm + "\n成分・原材料：" + (data.ingredients || "") +
         "\n知ってほしいこと：" + data.points + "\n使ってよい表現：" + data.okWords + "\nNG表現：" + data.ngWords +
         "\n公式Web：" + (data.siteUrl || "") + "\n商品・購入ページ：" + (data.productUrl || "") + "\nInstagram：" + (data.insta || "") + "\nタグ付け希望：" + (data.tags || "") +
         "\n発送の確認：" + (data.shipOk || "（該当なし）") + "\n補足：" + (data.note || "") + "\n";
