@@ -244,6 +244,11 @@
       <label class="opt"><input type="radio" name="q3" value="appear"><span>本人が出演して商品をご紹介したい</span></label>
       <label class="opt"><input type="radio" name="q3" value="expert"><span>オーガニックの専門家として、商品の背景や特徴にも触れてほしい</span></label>
       <label class="opt"><input type="radio" name="q3" value="propose"><span>内容に合う方法を提案してほしい</span></label>
+      <div class="field" style="margin-top:14px">
+        <label class="l" for="imageNote">どんなイメージで紹介したいか、具体的に教えてください。<span class="opt-tag">任意</span></label>
+        <textarea id="imageNote" name="imageNote" placeholder="例）商品のアップを中心に／風景もしっかり入れてほしい／本人が出演して、一緒に温めながら紹介／山の上で食べるシーン／キッチンで楽しく調理する雰囲気／オーガニックの専門家として、背景や特徴をていねいに解説　など"></textarea>
+        <p class="fine">思いつくものを、そのまま書いていただいて大丈夫です。決まっていなければ空欄で構いません。</p>
+      </div>
     </div>
 
     <!-- 4 商品の基本情報 -->
@@ -610,7 +615,7 @@
       points: form.points.value.trim(), okWords: form.okWords.value.trim(), ngWords: form.ngWords.value.trim(),
       siteUrl: form.siteUrl.value.trim(), productUrl: form.productUrl.value.trim(), insta: form.insta.value.trim(), tags: form.tags.value.trim(),
       shipOk: (["intl", "unknown"].indexOf(val("q5")) >= 0) ? "確認済み（保留・返送の可能性／送り状は実際の内容）" : "",
-      note: form.note.value.trim(),
+      note: (form.imageNote.value.trim() ? "【紹介のイメージ】" + form.imageNote.value.trim() + "\n" : "") + form.note.value.trim(),
       src: SRC
     };
 
