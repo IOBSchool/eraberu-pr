@@ -171,8 +171,8 @@
       <h2>「投げ銭」といっても、SNSライブのギフトとは少し違います</h2>
       <p>今回は、ブランド様に内容とご予算を選んでいただき、それをもとに私から正式なPR内容をご提案する仕組みです。</p>
       <ol>
-        <li><b>STEP 1｜やってほしいことを選ぶ</b>ストーリーズ・フィード・リール、撮影イメージ、私の関わり方など、5つの質問から希望に近いものを選びます。</li>
-        <li><b>STEP 2｜参考価格を見て、希望予算を決める</b>選んだ内容に応じた参考価格が表示されます。確認したうえで、最後の金額は1円以上から自由に入力できます。</li>
+        <li><b>STEP 1｜やってほしいことを選ぶ</b>リール・カルーセル投稿・ストーリーズなどの形、私の関わり方を選び、商品の情報と、使ってよい表現を教えていただきます。</li>
+        <li><b>STEP 2｜参考価格を見て、希望予算を決める</b>選んだ内容に応じた参考価格が表示されます。確認したうえで、最後の金額は自由に入力できます。</li>
         <li><b>STEP 3｜私から正式な内容をご提案します</b>送っていただいた内容をもとに、2営業日以内を目安に「このご予算なら、こんな形でできそうです」と正式な内容と金額をお返しします。</li>
       </ol>
       <p class="fine">双方が内容と金額にOKとなった時点で正式に確定します。<br>このページから送信しただけでは、契約・請求は確定しません。</p>
@@ -195,49 +195,68 @@
 
   <form id="applyForm" novalidate>
 
-    <!-- Q1 -->
+    <!-- 1 時期 -->
     <div class="q" id="q1box">
-      <h2><span class="num">1.</span>いつ・どこで撮影するのがよさそうですか？</h2>
-      <label class="opt"><input type="radio" name="q1" value="hotel" required><span>2026年11月のオーストリア・ビオホテル滞在中に撮影したい</span></label>
-      <label class="opt"><input type="radio" name="q1" value="other"><span>ビオホテル以外の時期・場所で相談したい</span></label>
-      <label class="opt"><input type="radio" name="q1" value="undecided"><span>まだ決めていないので相談したい</span></label>
-      <div class="cond" data-show="q1=hotel">
-        <p>ビオホテルでの滞在日数と撮影できる時間には限りがあります。</p>
-        <p>今回のビオホテル撮影は、最大3社まで、リール制作は2本までを予定しています。</p>
-        <p>ご希望いただいた内容と、現地で確保できる撮影時間を確認しながら、実施内容を調整します。</p>
-        <p>ご希望が重なった場合には、撮影内容や実施時期をご相談させていただく場合があります。</p>
-        <p>11月のビオホテル撮影が難しい場合も、別の時期・場所での撮影をご相談いただけます。</p>
-      </div>
-      <div class="cond" data-show="q1=other">
-        <p>別の時期・場所での撮影もご相談いただけます。</p>
-        <p>移動・撮影場所・必要な手配などによって追加費用が発生する場合には、実施前に内容と金額をご相談します。</p>
-      </div>
-      <p class="fine">※撮影できる件数や時期には限りがあるため、受付状況によっては予告なく受付を終了する場合があります。また、ご相談いただくタイミングや撮影条件によっては、今回のPRをお受けできない場合があります。あらかじめご了承ください。</p>
+      <h2><span class="num">1.</span>どのタイミングでの撮影・ご紹介をご希望ですか？</h2>
+      <label class="opt"><input type="radio" name="q1" value="hotel" required><span>11月4日〜7日のビオホテル撮影を希望（商品が間に合う場合）</span></label>
+      <label class="opt"><input type="radio" name="q1" value="after"><span>商品が届いたあと、別の日に撮影・投稿してほしい</span></label>
+      <label class="opt"><input type="radio" name="q1" value="undecided"><span>時期は相談したい</span></label>
+      <p class="fine">商品の到着時期によっては、11月のビオホテルで撮影できない場合があります。ホテル撮影そのものをお約束するものではありません。</p>
     </div>
 
-    <!-- Q2 -->
+    <!-- 2 紹介の形 -->
     <div class="q" id="q2box">
-      <h2><span class="num">2.</span>どんな形でご紹介するのがよさそうですか？</h2>
-      <label class="opt"><input type="radio" name="q2" value="stories" required><span>ストーリーズ中心<span class="d">短く自然に商品をご紹介</span></span></label>
-      <label class="opt"><input type="radio" name="q2" value="feed"><span>フィード投稿＋ストーリーズ<span class="d">写真と文章として残る形でご紹介</span></span></label>
-      <label class="opt"><input type="radio" name="q2" value="reel"><span>リール＋ストーリーズ<span class="d">動画を中心に商品の魅力をご紹介</span></span></label>
-      <label class="opt"><input type="radio" name="q2" value="all"><span>リール＋フィード＋ストーリーズ<span class="d">複数の形でご紹介</span></span></label>
-      <label class="opt"><input type="radio" name="q2" value="undecided"><span>まだ決めていない／提案してほしい</span></label>
+      <h2><span class="num">2.</span>一番希望する紹介の形を教えてください。</h2>
+      <label class="opt"><input type="radio" name="q2" value="reel" required><span>リール<span class="d">動画を中心に商品をご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="carousel"><span>カルーセル投稿<span class="d">写真と文章で、複数枚の画像としてご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="stories"><span>ストーリーズ<span class="d">短く自然にご紹介</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="combo"><span>組み合わせたい</span></label>
+      <label class="opt"><input type="radio" name="q2" value="propose"><span>私から提案してほしい</span></label>
+      <div class="cond" data-show="q2=combo">
+        <p>組み合わせたい投稿をお選びください（複数選択できます）。</p>
+        <div class="grid2">
+          <label class="opt"><input type="checkbox" name="q2b" value="reel"><span>リール</span></label>
+          <label class="opt"><input type="checkbox" name="q2b" value="carousel"><span>カルーセル投稿</span></label>
+          <label class="opt"><input type="checkbox" name="q2b" value="stories"><span>ストーリーズ</span></label>
+        </div>
+      </div>
+      <p class="fine">まず第一希望を教えてください。実際の内容は、商品・ご予算・撮影条件を見てご提案します。</p>
     </div>
 
-    <!-- Q3 -->
+    <!-- 3 関わり方 -->
     <div class="q" id="q3box">
-      <h2><span class="num">3.</span>レムケなつこが、どのくらい関わる形がよさそうですか？</h2>
+      <h2><span class="num">3.</span>私に、どんな形で紹介してほしいですか？</h2>
       <label class="opt"><input type="radio" name="q3" value="visual" required><span>商品・風景・文字を中心に見せたい</span></label>
       <label class="opt"><input type="radio" name="q3" value="voice"><span>声や短いコメントを入れたい</span></label>
       <label class="opt"><input type="radio" name="q3" value="appear"><span>本人が出演して商品をご紹介したい</span></label>
-      <label class="opt"><input type="radio" name="q3" value="expert"><span>専門家として商品の背景や特徴についても解説してほしい</span></label>
+      <label class="opt"><input type="radio" name="q3" value="expert"><span>オーガニックの専門家として、商品の背景や特徴にも触れてほしい</span></label>
       <label class="opt"><input type="radio" name="q3" value="propose"><span>内容に合う方法を提案してほしい</span></label>
     </div>
 
-    <!-- Q4 -->
+    <!-- 4 商品の基本情報 -->
+    <h2 class="sec-title">ご紹介を希望する商品について</h2>
+    <div class="field"><label class="l" for="product">商品名<span class="req">必須</span></label><input type="text" id="product" name="product" required></div>
+    <div class="field"><label class="l" for="category">カテゴリー<span class="req">必須</span></label><input type="text" id="category" name="category" required placeholder="例）お茶、UV（日焼け止め）、サプリメント"></div>
+    <div class="field"><label class="l" for="form_">容量・形状<span class="req">必須</span></label><input type="text" id="form_" name="productForm" required placeholder="例）50g・粉末、100ml・液体、60粒・カプセル">
+      <p class="fine">粉・液体・錠剤・クリームなど、発送にも関係するため、形状もお願いします。</p></div>
+    <div class="field"><label class="l" for="points">この商品の「ここを知ってほしい」を、3つまで教えてください。<span class="req">必須</span></label><textarea id="points" name="points" required></textarea>
+      <p class="fine">撮影・投稿で一番大切にしたい部分です。短い箇条書きで大丈夫です。</p></div>
+    <div class="field"><label class="l" for="okWords">投稿で使ってよい表現を教えてください。<span class="req">必須</span></label><textarea id="okWords" name="okWords" required></textarea>
+      <p class="fine">商品の特徴・成分・使い方など、御社で確認済みの表現をそのまま貼ってください。私は基本的に、ここにいただいた範囲から表現します。</p></div>
+    <div class="field"><label class="l" for="ngWords">反対に、使ってほしくない表現・NG表現はありますか？<span class="req">必須</span></label><textarea id="ngWords" name="ngWords" required></textarea>
+      <p class="fine">なければ「特になし」で大丈夫です。</p></div>
+
+    <!-- 5 リンク・アカウント -->
+    <h2 class="sec-title">投稿から案内してよいリンク・アカウント</h2>
+    <div class="field"><label class="l" for="siteUrl">公式Webサイト<span class="opt-tag">どちらか1つは必須</span></label><input type="url" id="siteUrl" name="siteUrl" placeholder="https://"></div>
+    <div class="field"><label class="l" for="productUrl">商品・購入ページ<span class="opt-tag">どちらか1つは必須</span></label><input type="url" id="productUrl" name="productUrl" placeholder="https://">
+      <p class="fine">公式Webまたは商品・購入ページのどちらか1つはお願いします。</p></div>
+    <div class="field"><label class="l" for="insta">Instagramアカウント<span class="opt-tag">任意</span></label><input type="text" id="insta" name="insta" placeholder="@アカウント名 またはURL"></div>
+    <div class="field"><label class="l" for="tags">投稿でタグ付けしてほしいアカウント<span class="opt-tag">任意</span></label><input type="text" id="tags" name="tags" placeholder="@アカウント名"></div>
+
+    <!-- 6 撮影イメージ（任意） -->
     <div class="q" id="q4box">
-      <h2><span class="num">4.</span>どんな撮影イメージが商品に合いそうですか？<small>（複数選択できます）</small></h2>
+      <h2><span class="num">4.</span>撮影の雰囲気について、希望があれば教えてください。<small>（任意・複数選択できます）</small></h2>
       <div class="grid2">
         <label class="opt"><input type="checkbox" name="q4" value="ホテル室内・インテリア"><span>ホテル室内・インテリア</span></label>
         <label class="opt"><input type="checkbox" name="q4" value="自然・緑"><span>自然・緑</span></label>
@@ -246,51 +265,38 @@
         <label class="opt"><input type="checkbox" name="q4" value="屋外・ハイキング"><span>屋外・ハイキング</span></label>
         <label class="opt"><input type="checkbox" name="q4" value="静か・落ち着いた雰囲気"><span>静か・落ち着いた雰囲気</span></label>
         <label class="opt"><input type="checkbox" name="q4" value="クール・洗練"><span>クール・洗練</span></label>
-        <label class="opt"><input type="checkbox" name="q4" value="その他"><span>その他</span></label>
         <label class="opt"><input type="checkbox" name="q4" value="おまかせしたい"><span>おまかせしたい</span></label>
       </div>
-      <p class="fine">実際に撮影できる場所やシーンは、現地の環境・天候・ホテル側の許可・当日の撮影状況によって変わります。<br>こちらはブランドのご希望を知るための設問で、特定の場所での撮影をお約束するものではありません。</p>
+      <p class="fine">実際に撮影できる場所やシーンは、現地の環境・天候・ホテル側の許可・当日の撮影状況によって変わります。特定の場所での撮影をお約束するものではありません。</p>
     </div>
 
-    <!-- Q5 -->
+    <!-- 7 商品の場所・発送 -->
     <div class="q" id="q5box">
-      <h2><span class="num">5.</span>撮影する商品は現在どの状態ですか？</h2>
+      <h2><span class="num">5.</span>商品はいま、どこにありますか？</h2>
       <label class="opt"><input type="radio" name="q5" value="hand" required><span>すでにレムケなつこの手元にある</span></label>
-      <label class="opt"><input type="radio" name="q5" value="eu"><span>ドイツ国内／EU圏内から送付予定</span></label>
-      <label class="opt"><input type="radio" name="q5" value="intl"><span>日本などEU圏外から国際発送予定</span></label>
+      <label class="opt"><input type="radio" name="q5" value="eu"><span>ドイツ・EU圏内にある（そこから送る）</span></label>
+      <label class="opt"><input type="radio" name="q5" value="intl"><span>日本などEU圏外にある（国際発送が必要）</span></label>
       <label class="opt"><input type="radio" name="q5" value="none"><span>商品の発送は不要</span></label>
-      <label class="opt"><input type="radio" name="q5" value="unknown"><span>まだ分からない</span></label>
+      <label class="opt"><input type="radio" name="q5" value="unknown"><span>未定</span></label>
 
-      <div class="cond" data-show="q1=hotel&amp;q5=hand">
+      <div class="cond" data-show="q5=hand">
         <p>商品はすでに手元にありますので、発送のお手続きは不要です。</p>
-        <p>撮影内容を出発前に確定する必要があるため、10月23日（金）頃までを11月撮影のご相談目安としています。</p>
-        <p>それ以降でも内容によってはご相談できますが、撮影時期を変更してご提案する場合があります。</p>
       </div>
-      <div class="cond" data-show="q1=hotel&amp;q5=eu">
-        <p>撮影は11月4日〜7日、出発は11月3日頃を予定しています。</p>
-        <p>商品は出発前にドイツで受け取れる必要があります。</p>
-        <p>・ドイツ到着：10月30日（金）までを希望</p>
-        <p>商品カテゴリーや配送状況によって異なるため、余裕をもった発送をお願いします。</p>
+      <div class="cond" data-show="q5=eu">
+        <p>ドイツ・EU圏内からのご発送の場合は、宛先と送り方を、正式なご連絡の際にご案内します。</p>
       </div>
-      <div class="cond" data-show="q1=hotel&amp;q5=intl|unknown" data-until="2026-10-20">
-        <p>撮影は11月4日〜7日、出発は11月3日頃を予定しています。</p>
-        <p>商品は出発前にドイツで受け取れる必要があります。</p>
-        <p>日本などEU圏外から発送する場合は、通関の日数も考え、以下を目安にしてください。</p>
-        <p>・ご相談：10月16日（金）頃まで<br>
-          ・DHL Express・FedExなど国際宅配便での発送：10月20日（火）まで<br>
-          <span class="by-ems">・郵便EMSでの発送：10月16日（金）まで<br></span>
-          ・ドイツ到着：10月30日（金）までを希望</p>
-        <p>配送や通関の状況によって前後するため、可能な範囲で余裕をもった発送をお願いします。</p>
-        <p>なお、食品は内容によって通関条件が異なるため、具体的な発送方法は個別に確認してご案内します。</p>
-      </div>
-      <div class="cond" data-show="q1=hotel&amp;q5=intl|unknown" data-from="2026-10-21">
-        <p>11月4日〜7日のビオホテル撮影については、これから日本などEU圏外から商品を発送する場合、受け取りまでの日数を考えると今回の撮影には間に合いません。</p>
-        <p>ただ、商品やご希望の内容に合う別の時期・場所でご提案できる場合があります。<br>11月以外も含めて検討しますので、そのままご希望の内容をお送りください。</p>
-        <p>なお、食品は内容によって通関条件が異なるため、具体的な発送方法は個別に確認してご案内します。</p>
-      </div>
-      <div class="cond" data-show="q1=other|undecided&amp;q5=eu|intl|unknown">
-        <p>11月のビオホテル撮影用の発送期限は適用されません。</p>
-        <p>実施時期・場所が決まりましたら、商品をいつまでにお送りいただく必要があるか個別にご案内します。</p>
+      <div class="cond" id="shipIntl" data-show="q5=intl|unknown">
+        <p><b>日本などEU圏外から商品を送る場合</b></p>
+        <p>今回、日本からの発送はDHL Express（民間クーリエ）でお願いしています。送付先は、下記の会社宛です。</p>
+        <p>Institut für Organic Business GmbH<br>Natsuko Lempke<br>Schillerweg 4<br>88171 Weiler-Simmerberg<br>Germany</p>
+        <p>商品は、PR撮影用の「商業用サンプル」として、実際の品名・数量・価格を正しく記載してお送りください。価格は0円にはせず、実際の内容に沿って記載をお願いします。</p>
+        <p>化粧品の場合は、全成分表をドイツ語で、できればINCI名（国際的な成分名）も併記して、箱の中に入れてください。AIなどを使って簡単に作っていただく形で大丈夫です。商品名とパッケージの表示名が照らし合わせられる形だと助かります。</p>
+        <p>スプレー式の商品と、アルコール成分が24％を超えるものは、今回はお送りいただかないようお願いします。アルコールを含む場合は、その割合も成分表に付記してください。</p>
+        <p>コスメとインナーケア（サプリ等）を両方送る場合は、別々の箱でお願いします。</p>
+        <p>海外発送は、税関で長く止まったり、受け取れない可能性があります。今回もその可能性をご理解いただいたうえで発送をお願いします。11月4〜7日のビオホテル撮影に間に合わない場合は、商品到着後の撮影・投稿をご相談します。</p>
+        <p>輸入時の税金は発生する前提で進めます。どちらが負担するかは、発送前に個別に確認します。</p>
+        <label class="check"><input type="checkbox" name="shipOk1" id="shipOk1"><span>海外発送では、保留・返送・受け取れない可能性があることを確認しました</span></label>
+        <label class="check"><input type="checkbox" name="shipOk2" id="shipOk2"><span>送り状には、実際の品名・数量・価格を記載します</span></label>
       </div>
     </div>
 
@@ -319,24 +325,18 @@
       <div class="out" id="priceOut" aria-live="polite"></div>
     </div>
 
-    <!-- 金額（B版） -->
+    <!-- 金額 -->
     <div class="q amount">
       <h2>今回の金額</h2>
-      <p>参考価格を見たうえで、<br>「今回はこの金額でお願いしてみたい」<br>と思う金額を、1円以上で自由にご入力ください。</p>
+      <p>今回は「投げ銭PR」として、内容をご確認いただいたうえで、御社に金額を決めていただいています。</p>
+      <p>参考価格を見たうえで、「今回はこの金額でお願いしてみたい」と思う金額をご入力ください。</p>
       <div class="amount-row">
         <input type="number" name="amount" id="amount" min="1" step="1" inputmode="numeric" required placeholder="例）80000">
         <span>円</span>
       </div>
-      <p>参考価格と同じでなくて大丈夫です。</p>
-      <p>ただし、入力いただいた金額で、選択された内容をそのまま実施することをお約束するものではありません。</p>
-      <p>金額とご希望内容の両方を拝見して、</p>
-      <ul>
-        <li>この内容で実施する</li>
-        <li>内容を少し小さくして実施する</li>
-        <li>別の形をご提案する</li>
-      </ul>
-      <p>などを考えさせてください。</p>
-      <p>もし「今回はこの金額でもぜひご一緒したい」と私が思った場合には、そのままお受けすることもあります。</p>
+      <p>参考価格と同じでなくて大丈夫です。送信いただいた時点では、契約・請求は確定しません。</p>
+      <p>金額とご希望内容を拝見して、実施できそうな内容と正式な金額をご提案します。</p>
+      <p>なお、今回制作した投稿・素材は、御社の公式SNS・Web・広告等で二次使用いただけます。</p>
     </div>
 
     <!-- 御社について -->
@@ -354,40 +354,17 @@
       <p class="fine">※請求時の税の取り扱いを確認するために使用します。</p>
     </div>
 
-    <!-- 商品 -->
-    <h2 class="sec-title">ご紹介を希望する商品</h2>
-    <div class="field"><label class="l" for="product">商品名<span class="req">必須</span></label><input type="text" id="product" name="product" required></div>
-    <div class="field"><label class="l" for="productUrl">商品URL<span class="opt-tag">任意</span></label><input type="url" id="productUrl" name="productUrl" placeholder="https://"></div>
     <div class="field">
-      <label class="l" for="note">レムケなつこに事前に伝えておきたいことがあれば教えてください。<span class="opt-tag">任意</span></label>
+      <label class="l" for="note">最後に補足があれば教えてください。<span class="opt-tag">任意</span></label>
       <textarea id="note" name="note"></textarea>
-      <p class="fine">※自社SNS・Webサイト等で撮影素材を利用したいご希望がある場合も、こちらにお書きください。利用条件は内容確定前にご相談します。</p>
-    </div>
-
-    <!-- オンライン相談 -->
-    <h2 class="sec-title">オンラインでの相談</h2>
-    <div class="block">
-      <label class="check"><input type="checkbox" name="consult" id="consult"><span>実施前に一度オンラインで相談したい</span></label>
-      <p class="fine" style="margin-top:6px;">チェックされた場合は、送信後の画面から日程を選んでいただけます。<br>チェックされなくても問題ありません。</p>
-    </div>
-
-    <!-- 請求書・領収書 -->
-    <h2 class="sec-title">請求書・領収書</h2>
-    <div class="block">
-      <label class="check"><input type="checkbox" name="invoice" id="invoice"><span>正式決定後、請求書をメールで受け取りたい</span></label>
-      <div class="field" id="invoiceNameWrap" style="display:none;margin:10px 0 4px;">
-        <label class="l" for="invoiceName">請求書の宛名<span class="req">必須</span></label>
-        <input type="text" id="invoiceName" name="invoiceName">
-      </div>
-      <p class="fine" style="margin-top:6px;">このページを送信した時点では請求書は発行されません。<br>実施内容と金額を双方で確認し、正式に確定したあと、こちらで確定処理をすると請求書が自動でメール送付されます。</p>
-      <label class="check" style="margin-top:10px;"><input type="checkbox" name="receipt" id="receipt"><span>ご入金確認後、領収書の発行を希望する</span></label>
+      <p class="fine">社内での確認事項、撮影のご希望、スケジュールなどがあれば、こちらへ。</p>
     </div>
 
     <!-- 大切にしていること -->
     <h2 class="sec-title">ご紹介について大切にしていること</h2>
     <div class="care">
       <p>有償でのご紹介となるため、Instagramでは「タイアップ投稿」ラベルを表示し、キャプション冒頭に「#PR」を記載します。</p>
-      <p>また、商品の特徴は確認できる情報の範囲でお伝えし、効き目・効果などを断定する表現は行いません。</p>
+      <p>また、商品の特徴は、御社で確認いただいた表現の範囲でお伝えし、効き目・効果などを断定する表現は行いません。</p>
     </div>
 
     <h2 class="sec-title">PR実施後について</h2>
@@ -435,17 +412,12 @@
   <!-- 送信後（申込） -->
   <section class="done" id="thanks">
     <div class="mincho">ありがとうございます。</div>
-    <p>内容とご予算を一度こちらで拝見し、実施できそうな形と正式な金額をご連絡します。<br>この時点では、まだ実施内容・金額・ご契約は確定していません。</p>
-    <p>原則2営業日以内に、メールでご連絡します。</p>
-
-    <div id="timerexBox">
-      <h3>オンラインで少し相談したい方へ</h3>
-      <p>下からご都合のよい日時をお選びください。<br>商品やご希望の撮影イメージ、予算などを20分ほどで確認します。</p>
-      <div id="timerex_calendar"></div>
-    </div>
-
-    <p>相談を希望されなかった場合は、そのままメールをお待ちください。</p>
-    <p id="thanksInvoice" style="display:none;">請求書をご希望いただいた場合も、この時点ではまだ発行されません。<br>実施内容と金額が決まり、双方で確認できたあとに、登録いただいたメールアドレスへ自動でお送りします。</p>
+    <p>内容を受け取りました。</p>
+    <p>私の方で、<br>・商品との相性<br>・撮影・投稿の形<br>・発送状況<br>・いただいたご予算<br>を確認します。</p>
+    <p>原則2営業日以内に、実施できそうな内容をメールでご連絡します。</p>
+    <p>この時点では、PRの実施・内容・金額・請求はまだ確定していません。<br>双方で内容と金額が決まりましたら正式決定となり、その後、請求書をメールでお送りします。</p>
+    <p>発送が必要な場合は、正式決定前でも、日程の都合で先に確認をお願いすることがあります。</p>
+    <p>ありがとうございます。ご一緒できる形を考えてみます☺️</p>
   </section>
 
   <!-- 送信後（見送り・今後連絡OK） -->
@@ -475,75 +447,80 @@
 <script>
   // ── 送信先：えらべるPR専用のGASウェブアプリ（有料申込_2026のタブ「えらべるPR_11月ビオホテル_2026-10」に書く）。未設定の間は送れたフリをせずメールに切り替える ──
   const GAS_URL = "https://script.google.com/macros/s/AKfycbzBowjG6t3QlUyQsbCdz2ixgtETF7fe1KD6_Pz_WLexzXQvQWaVlySRtzyHksSBRo-s/exec";
-  // ── TimeRex：「オンラインで相談したい」にチェックした人だけ、送信後に予約画面を出す（20分）。URLは本人確認後に入れる ──
-  const TIMEREX_URL = "https://timerex.net/s/organiclifeingermany_ae43/9625aba1";
 
   // ── 流入元（?src=）：どのDM・どの会社向けリンクから来たか（個人情報なし） ──
   const SRC = (new URLSearchParams(location.search).get("src") || "direct").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 30) || "direct";
 
   const form = document.getElementById("applyForm");
   const LABELS = {
-    q1: { hotel: "2026年11月のオーストリア・ビオホテル滞在中に撮影したい", other: "ビオホテル以外の時期・場所で相談したい", undecided: "まだ決めていないので相談したい" },
-    q2: { stories: "ストーリーズ中心", feed: "フィード投稿＋ストーリーズ", reel: "リール＋ストーリーズ", all: "リール＋フィード＋ストーリーズ", undecided: "まだ決めていない／提案してほしい" },
-    q3: { visual: "商品・風景・文字を中心に見せたい", voice: "声や短いコメントを入れたい", appear: "本人が出演して商品をご紹介したい", expert: "専門家として商品の背景や特徴についても解説してほしい", propose: "内容に合う方法を提案してほしい" },
-    q5: { hand: "すでにレムケなつこの手元にある", eu: "ドイツ国内／EU圏内から送付予定", intl: "日本などEU圏外から国際発送予定", none: "商品の発送は不要", unknown: "まだ分からない" }
+    q1: { hotel: "11月4日〜7日のビオホテル撮影を希望（商品が間に合う場合）", after: "商品が届いたあと、別の日に撮影・投稿してほしい", undecided: "時期は相談したい" },
+    q2: { reel: "リール", carousel: "カルーセル投稿", stories: "ストーリーズ", combo: "組み合わせたい", propose: "私から提案してほしい" },
+    q2b: { reel: "リール", carousel: "カルーセル投稿", stories: "ストーリーズ" },
+    q3: { visual: "商品・風景・文字を中心に見せたい", voice: "声や短いコメントを入れたい", appear: "本人が出演して商品をご紹介したい", expert: "オーガニックの専門家として、商品の背景や特徴にも触れてほしい", propose: "内容に合う方法を提案してほしい" },
+    q5: { hand: "すでにレムケなつこの手元にある", eu: "ドイツ・EU圏内にある（そこから送る）", intl: "日本などEU圏外にある（国際発送が必要）", none: "商品の発送は不要", unknown: "未定" }
   };
-  // 参考価格（本人確定10/14）：下限＝基準額＋関わり方の加算／上限＝下限＋2万円（下には幅を出さない）
+  // 参考価格（本人確定10/14）：下限＝基準額＋関わり方の加算／上限＝下限＋2万円。カルーセル投稿は、従来の「フィード投稿」枠として扱う（横山10/19）
   const BASE = { stories: 5, feed: 8, reel: 14, all: 18 };
   const ADD  = { visual: 0, voice: 1, appear: 2, expert: 4 };
 
   function val(name){ var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : ""; }
+  function vals(name){ return Array.prototype.map.call(form.querySelectorAll('input[name="' + name + '"]:checked'), function(x){ return x.value; }); }
 
-  // ── 設問の選択に応じた文の出し分け（data-show="q1=hotel&q5=intl|unknown"） ──
-  // 今日の日付（ドイツ時間）。発送期限を過ぎたら、その行・その塊を出さない
-  const TODAY = (function(){ var t = new URLSearchParams(location.search).get("today"); if (t && /^\d{4}-\d{2}-\d{2}$/.test(t)) return t; /* 表示確認用 */ try { return new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Berlin" }).format(new Date()); } catch (e) { return new Date().toISOString().slice(0, 10); } })();
-  if (TODAY > "2026-10-16") document.querySelectorAll(".by-ems").forEach(function(x){ x.style.display = "none"; });
+  // 紹介の形 → 価格の枠（stories / feed / reel / all）。決まらないときは ""
+  function tier(){
+    var q2 = val("q2"), set = [];
+    if (q2 === "reel" || q2 === "carousel" || q2 === "stories") set = [q2];
+    else if (q2 === "combo") set = vals("q2b");
+    if (!set.length) return "";
+    var r = set.indexOf("reel") >= 0, c = set.indexOf("carousel") >= 0;
+    if (r && c) return "all";
+    if (r) return "reel";
+    if (c) return "feed";
+    return "stories";
+  }
+  function q2Label(){
+    var q2 = val("q2");
+    if (q2 === "combo") { var b = vals("q2b").map(function(x){ return LABELS.q2b[x]; }); return "組み合わせたい" + (b.length ? "（" + b.join("＋") + "）" : ""); }
+    return LABELS.q2[q2] || "";
+  }
 
+  // ── 設問の選択に応じた文の出し分け（data-show="q5=intl|unknown"） ──
   function updateConds(){
     document.querySelectorAll(".cond[data-show]").forEach(function(box){
       var ok = box.getAttribute("data-show").split("&").every(function(part){
         var kv = part.split("="); return kv[1].split("|").indexOf(val(kv[0])) >= 0;
       });
-      var until = box.getAttribute("data-until"), from = box.getAttribute("data-from");
-      if (until && TODAY > until) ok = false;
-      if (from && TODAY < from) ok = false;
       box.classList.toggle("on", ok);
     });
+    // 海外発送の確認チェック（2つ）は、日本などEU圏外／未定を選んだときだけ必須
+    var ship = ["intl", "unknown"].indexOf(val("q5")) >= 0;
+    document.getElementById("shipOk1").required = ship;
+    document.getElementById("shipOk2").required = ship;
   }
 
   // ── 今回の参考価格 ──
   function priceInfo(){
-    var q1 = val("q1"), q2 = val("q2"), q3 = val("q3");
+    var q3 = val("q3"), t = tier();
     var html = "", text = "";
-    if (!q2 || (q2 !== "undecided" && !q3)) {
-      html = "<p>上の項目を選んでいただくと、ここに今回の参考価格が表示されます。</p><p>まだ決められない項目は「相談したい」「提案してほしい」のままでも大丈夫です。</p>";
+    if (!t || !q3) {
+      html = "<p>上の項目を選んでいただくと、ここに今回の参考価格が表示されます。</p><p>まだ決められない項目は「提案してほしい」のままでも大丈夫です。</p>";
       text = "（未表示）";
-    } else if (q2 === "undecided") {
-      html = "<p>発信方法がまだ決まっていないため、参考価格はまだ表示していません。</p><p>ご希望が決まっていなくても、そのまま送っていただいて大丈夫です。商品やご予算を拝見して、合いそうな形をご提案します。</p>";
-      text = "（発信方法が未定のため表示なし）";
     } else if (q3 === "propose") {
-      var b = BASE[q2];
+      var b = BASE[t];
       html = "<p>選択された発信方法の参考価格は</p><span class=\"yen\">約 " + b + "万円〜</span><p>です。</p><p>レムケなつこの関わり方は「提案してほしい」が選択されているため、出演・解説等の追加分はまだ含めていません。<br>内容を拝見したうえでご提案します。</p>";
       text = "約" + b + "万円〜（関わり方は提案希望）";
     } else {
-      var lo = BASE[q2] + ADD[q3], hi = lo + 2;
+      var lo = BASE[t] + ADD[q3], hi = lo + 2;
       html = "<p>今回の参考価格：</p><span class=\"yen\">約 " + lo + "万円〜" + hi + "万円</span>";
-      if (q1 === "other") html += "<p class=\"fine\">※ビオホテル以外の時期・場所を選ばれた場合、この金額はコンテンツ制作部分の参考価格です。移動・撮影場所・必要な手配等で追加費用が必要な場合には、事前にご相談します。</p>";
       text = "約" + lo + "万円〜" + hi + "万円";
     }
+    if (!t) { html = "<p>発信方法がまだ決まっていないため、参考価格はまだ表示していません。</p><p>ご希望が決まっていなくても、そのまま送っていただいて大丈夫です。商品やご予算を拝見して、合いそうな形をご提案します。</p>"; text = "（発信方法が未定のため表示なし）"; }
     return { html: html, text: text };
   }
   function updatePrice(){ document.getElementById("priceOut").innerHTML = priceInfo().html; }
 
   form.addEventListener("change", function(){ updateConds(); updatePrice(); });
   updateConds(); updatePrice();
-
-  // 請求書にチェックした人にだけ宛名欄を出す
-  document.getElementById("invoice").addEventListener("change", function(){
-    var on = this.checked;
-    document.getElementById("invoiceNameWrap").style.display = on ? "block" : "none";
-    document.getElementById("invoiceName").required = on;
-  });
 
   function showDone(id){
     document.getElementById("pageMain").style.display = "none";
@@ -570,6 +547,7 @@
     f.querySelectorAll("[required]").forEach(function(el){
       if (bad) return;
       if (el.type === "radio") { if (!f.querySelector('input[name="' + el.name + '"]:checked')) bad = el; }
+      else if (el.type === "checkbox") { if (!el.checked) bad = el; }
       else if (!el.checkValidity()) bad = el;
     });
     return bad;
@@ -580,8 +558,18 @@
     e.preventDefault();
     var err = document.getElementById("formErr");
     var bad = firstInvalid(form);
+    var msg = "";
     if (bad) {
-      err.textContent = bad.id === "agree" ? "個人情報の取り扱いへの同意にチェックをお願いします。" : (bad.id === "amount" ? "金額は1円以上の数字でご入力ください。" : "未入力の項目があります。ご確認ください。");
+      msg = bad.id === "agree" ? "個人情報の取り扱いへの同意にチェックをお願いします。"
+          : (bad.id === "amount" ? "金額は1円以上の数字でご入力ください。"
+          : (bad.name === "shipOk1" || bad.name === "shipOk2" ? "海外発送についての確認項目（2つ）にチェックをお願いします。" : "未入力の項目があります。ご確認ください。"));
+    } else if (!form.siteUrl.value.trim() && !form.productUrl.value.trim()) {
+      bad = form.siteUrl; msg = "公式Webサイトまたは商品・購入ページのどちらか1つはご入力ください。";
+    } else if (val("q2") === "combo" && !vals("q2b").length) {
+      bad = form.querySelector('input[name="q2b"]'); msg = "組み合わせたい投稿を1つ以上お選びください。";
+    }
+    if (bad) {
+      err.textContent = msg;
       err.classList.add("on");
       var box = bad.closest(".q, .field, .block, label") || bad;
       box.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -592,29 +580,29 @@
 
     var btn = document.getElementById("submitBtn");
     btn.disabled = true; btn.textContent = "送信中…";
-    var q4 = Array.prototype.map.call(form.querySelectorAll('input[name="q4"]:checked'), function(x){ return x.value; });
     var data = {
       kind: "申込",
-      q1: LABELS.q1[val("q1")], q2: LABELS.q2[val("q2")], q3: LABELS.q3[val("q3")], q4: q4.join("／"), q5: LABELS.q5[val("q5")],
+      q1: LABELS.q1[val("q1")], q2: q2Label(), q3: LABELS.q3[val("q3")], q4: vals("q4").join("／"), q5: LABELS.q5[val("q5")],
       q1code: val("q1"), q5code: val("q5"), price: priceInfo().text,
       amount: String(Math.floor(Number(form.amount.value))),
       company: form.company.value.trim(), person: form.person.value.trim(), email: form.email.value.trim(), location: val("location"),
-      product: form.product.value.trim(), productUrl: form.productUrl.value.trim(), note: form.note.value.trim(),
-      consult: form.consult.checked, invoice: form.invoice.checked, invoiceName: form.invoiceName.value.trim(), receipt: form.receipt.checked,
+      product: form.product.value.trim(), category: form.category.value.trim(), productForm: form.productForm.value.trim(),
+      points: form.points.value.trim(), okWords: form.okWords.value.trim(), ngWords: form.ngWords.value.trim(),
+      siteUrl: form.siteUrl.value.trim(), productUrl: form.productUrl.value.trim(), insta: form.insta.value.trim(), tags: form.tags.value.trim(),
+      shipOk: (["intl", "unknown"].indexOf(val("q5")) >= 0) ? "確認済み（保留・返送の可能性／送り状は実際の内容）" : "",
+      note: form.note.value.trim(),
       src: SRC
     };
 
-    function thanks(){
-      document.getElementById("thanksInvoice").style.display = data.invoice ? "block" : "none";
-      if (data.consult) showTimeRex();
-      showDone("thanks");
-    }
+    function thanks(){ showDone("thanks"); }
     function fb(){
-      var body = "選べる投げ銭PR（11月ビオホテルPR）の希望内容を送ります。\n\n" +
-        "1. 撮影の時期・場所：" + data.q1 + "\n2. ご紹介の形：" + data.q2 + "\n3. 関わり方：" + data.q3 + "\n4. 撮影イメージ：" + (data.q4 || "（なし）") + "\n5. 商品の状態：" + data.q5 +
+      var body = "選べる投げ銭PRの希望内容を送ります。\n\n" +
+        "1. 撮影・紹介のタイミング：" + data.q1 + "\n2. 紹介の形：" + data.q2 + "\n3. 関わり方：" + data.q3 + "\n4. 撮影の雰囲気：" + (data.q4 || "（なし）") + "\n5. 商品の場所：" + data.q5 +
         "\n参考価格：" + data.price + "\n今回の金額：" + data.amount + "円\n\n会社名：" + data.company + "\nご担当者名：" + data.person + "\nメール：" + data.email + "\n所在地：" + data.location +
-        "\n商品名：" + data.product + "\n商品URL：" + (data.productUrl || "") + "\n伝えておきたいこと：" + (data.note || "") +
-        "\nオンライン相談：" + (data.consult ? "希望する" : "なし") + "\n請求書：" + (data.invoice ? "希望（宛名：" + data.invoiceName + "）" : "なし") + "\n領収書：" + (data.receipt ? "希望" : "なし") + "\n";
+        "\n\n商品名：" + data.product + "\nカテゴリー：" + data.category + "\n容量・形状：" + data.productForm +
+        "\n知ってほしいこと：" + data.points + "\n使ってよい表現：" + data.okWords + "\nNG表現：" + data.ngWords +
+        "\n公式Web：" + (data.siteUrl || "") + "\n商品・購入ページ：" + (data.productUrl || "") + "\nInstagram：" + (data.insta || "") + "\nタグ付け希望：" + (data.tags || "") +
+        "\n発送の確認：" + (data.shipOk || "（該当なし）") + "\n補足：" + (data.note || "") + "\n";
       fallbackMail("選べる投げ銭PR 希望内容（" + data.company + "）", body);
     }
     if (!gasReady()) { fb(); return; }
@@ -638,20 +626,6 @@
     if (!gasReady()) { fb(); return; }
     post(data).then(function(){ showDone("laterThanks"); }).catch(fb);
   });
-
-  // ── TimeRex 予約画面の埋め込み（公式の埋め込みスクリプト） ──
-  function showTimeRex(){
-    var box = document.getElementById("timerexBox");
-    box.style.display = "block";
-    var cal = document.getElementById("timerex_calendar");
-    if (!TIMEREX_URL) { cal.innerHTML = "<p class=\"fine\"><span class=\"tbd\">要確認：TimeRexの予約ページURL未設定</span></p>"; return; }
-    cal.setAttribute("data-url", TIMEREX_URL);
-    var s = document.createElement("script");
-    s.src = "https://asset.timerex.net/js/embed.js";
-    s.onload = function(){ try { TimerexCalendar(); } catch (e) { cal.innerHTML = "<a class=\"fallback-btn\" href=\"" + TIMEREX_URL + "\" target=\"_blank\" rel=\"noopener\">日程を選ぶ</a>"; } };
-    s.onerror = function(){ cal.innerHTML = "<a class=\"fallback-btn\" href=\"" + TIMEREX_URL + "\" target=\"_blank\" rel=\"noopener\">日程を選ぶ</a>"; };
-    document.body.appendChild(s);
-  }
 </script>
 </body>
 </html>
